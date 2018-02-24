@@ -1,0 +1,69 @@
+Overview
+
+WWW(World Wide Web)
+	- a collection of web resources and applications that let us access those applications with the use of the Internet.
+	- established around 1990
+	- invented by Sir Tim Berners-Lee
+	- Web resources
+			~Static
+			~Dynamic
+	- the internet
+			Infrastructure:
+			~ hosts - IP address(dotted quad form)
+			~ media
+			~protocols
+	- www- most important application we have in the internet
+	
+	>DNS- Domain Name System 
+		- directory service
+	>Fiddler- web debugging proxy
+			- allow us to see whats going on
+			
+
+Hypertext Transfer Protocol(HTTP)
+-application layer communications protocol used to access resources(hypertext/hypermedia) on the www.
+-invented by Tim Berners-Lee and CERn in 1989
+-jointly developed by the W3C and the IETF
+-version history:
+		~HTTP 0.9(1991)
+		~HTTP 1.0(RFC 1945, May 1996)
+		~HTTP 1.1(RFC 2068 January 1997, RFC 2616 June 1999), RFC 7230-7235(June 2014)
+		~HTTP 2(RFC 7540 May 2015)
+		
+HTTP Resource addressing
+- HTTP resources are identified using URI's (RFC 3986), or , more specifically HTTP URLs
+	>Scheme (http/https)
+	>Authority
+		-user information/authentication credentials(deprecated)
+		-host
+			>domain name(resolved to an IP address using DNS) of the server where the resources resides(or will be created)
+		-port number
+	>Path to resources (resolve relative to the document root on the server)
+		-may refer to a static or dynamic resources
+	>Query  - typically provided as key=value pairs with ampersand(&) separators between key/ value pairs
+			- maybe URI-encoded
+	>Fragment Identifier
+		examples:
+					http://usr:pwd@server.org:81/info/profile.php?id=1234#addr
+					https://www.google.com
+					
+HTTP Request Message
+	- Request Line (CRLF- terminated line consisting of separated values)
+			- Method
+			-Request Target
+			-Protocol Version
+	- message headers(general, request and/or entity headers)
+	-HTTP 1.1 requires at least the Host request header to be provided
+	- Empty Line(CRLF)
+	- Message Body aka paylaod(optional)
+	
+	
+HTTP Response Message
+	-Status Line(CRLF- terminated line consisting a three space separated values)
+			-Protocol version
+			-status code
+			- reason phrase
+			
+			
+			
+	
