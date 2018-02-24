@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>WWW</h2>
+<ul style="list-style-type:square">
+  <li><a href="#www_histo">History</a></li>
+</ul>
+
+<h2>HTTP</h2>
+
+<ul style="list-style-type:square">
+  <li><a href="#http_histo">History</a></li>
+  <li><a href="#vers_histo">Version history</a></li>
+  <li><a href="#funda">HTTP Fundamentals</a></li>
+  <li><a href="#resource_add">HTTP Resource Addressing</a></li>
+  <li><a href="#req_mess">HTTP Request Message</a></li>
+  <li><a href="#res_mess">HTTP Response Message</a></li>
+  <li><a href="#req_meth">HTTP Request Methods</a></li>
+  <li><a href="#support_func">HTTP Support for other Functionalities</a></li>
+  <li><a href="#mess_head">HTTP Message Headers</a></li>
+  <li><a href="#stat_codes">HTTP Status Codes</a>
+	<ul>
+		<li><a href="#stat_codes1">Informational (1xx)</a></li>
+		<li><a href="#stat_codes2">Success (2xx)</a></li>
+		<li><a href="#stat_codes3">Redirection (3xx)</a></li>
+		<li><a href="#stat_codes4">Client Error (4xx)</a></li>
+		<li><a href="#stat_codes5">Server Error (5xx)</a></li>
+	</ul>
+  </li>
+</ul>
+
+<div>
+	<h1 style="text-align:center"> WORLD WIDE WEB (WWW)</h1>
+	<p>World wide web (WWW) or web is like a container of the 
+	resources identified by Uniform Resource Locators(URLs) that is accessible using the Internet</p>
+	<h3 style="text-align:left " id="www_histo"> HISTORY </h3>
+			<p>
+				<ul>
+					<li>A collection of web resources and applications that 
+					let us access those applications with the use of the Internet.</li>
+					<li>Established around 1990</li>
+					<li>Invented by Sir Tim Berners-Lee</li>
+					<li>Web Resources
+						<ul>
+							<li>Static</li>
+							<li>Dynamic</li>
+						</ul>
+					</li>
+					<li>The Internet
+						<ul>
+							<li>Infrastructure
+								<ul>
+									<li>hosts - IP address(dotted quad format)</li>
+									<li>media</li>
+									<li>protocols</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>WWW Technologies
+						<ul>
+							<li> HTTP, HTML, CSS, Client side scripting</li>
+							<li>Server Side Scripting</li>
+							<li>Web Servers, Web Clients</li>
+							<li>Web Applications</li>
+						</ul>
+					</li>
+			</p>
+</div>
+
+<div>
+	<h1 style="text-align:center"> HYPERTEXT TRANSFER PROTOCOL(HTTP)</h1>
+		<p>Hyper Text Transfer Protocol is a computer protocol that defines how 
+		internet documents gets transmitted and formatted into your screen.</p>
+	<h3 style="text-align:left " id="http_histo"> HISTORY </h3>
+			<p>
+				<ul>
+					<li>Foundation of data communication</li>
+					<li>Invented by Tim Berners-Lee and CERn in 1989</li>
+					<li>Application layer communications protocol used to 
+					access resource (hypertext/ hypermedia) on the world wide web</li>
+					<li>Jointly developed by the W3C and the IETF</li>
+				</ul>
+			</p>
+	<h3 style="text-align:left " id="vers_histo">VERSION HISTORY</h3>
+			<p>
+				<ul>	
+					<li>HTTP 0.9: The One-Line Protocol (1991)</li>
+					<li>HTTP/1.0: Rapid Growth and Informational RFC (RFC 1945, May 1996)</li>
+					<li>HTTP/1.0: Rapid Growth and Informational RFC 
+					(RFC 2068 Jan 1997, RFC 2616 June 1999, RFC 7230-7235 June 2014)</li>
+					<li>HTTP/2: Improving Transport Performance (RFC 7540 May 2015)</li>
+				</ul>
+			</p>
+	
+	<h3 style="text-align:left " id="funda"> HTTP FUNDAMENTALS</h3>
+			<p>
+				<ul>
+					<li>HTTP runs on top of TCP/IP, TCP port 80 by default 
+					or TCP port 443 for HTTPS (HTTP over SSL/TLS)</li>
+					<li>HTTP based on a client-server architecture
+						<ul>
+							<li>Clients aka user agents (UA)</li>
+						</ul>
+					</li>
+					
+				</ul>
+			</p>
+			
+	<h3 style="text-align:left" id="resource_add">HTTP RESOURCE ADDRESSING </h3>
+		<p>HTTP resources are identified using URIs (RFC 3986), 
+		or more specifically, HTTP URLs
+			<ul style="list-style-type:square">
+				<li>Scheme (https or http)</li>
+				<li>Authority
+					<ul>
+						<li>User information or authentication credentials (depreciated)</li>
+						<li>Host
+							<ul>
+								<li>domain name (resolved to an 
+								IP address using DNS of the server using the resource)</li>
+							</ul>
+						</li>
+						<li>Port number</li>
+					</ul>
+				</li>
+				<li>Path to the resources 
+					<ul>
+						<li>Resolve relative to the document root on the server</li>
+						<li>Domain Name System (DNS)
+							<ul>
+								<li>May refer to a static or dynamic resources</li> 
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Query
+					<ul>
+						<li>typically provided as key=value pairs with ampersand(&) 
+						separators between key/ value pairs</li> 
+						<li>Maybe URI-encoded</li>
+					</ul>
+				</li>
+				<li>Fragment Identifier
+					<ul>
+						<li>bookmark</li>
+					</ul>
+				</li>
+	
+			</ul>
+		</p>
+	
+	<h3 style="text-align:left " id="req_mess">HTTP REQUEST MESSAGE </h3>
+		<p>
+			<ul>
+				<li>Request Line 
+					<ul>
+						<li>CRLF- terminated line consisting of separated values
+							<ul>
+								<li>Method</li>
+								<li>Request Target</li>
+								<li>Protocol Version</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Message Headers
+					<ul>
+						<li>General, request and/or entity headers
+							<ul>
+								<li>Status line, status code 200- successful </li>
+								<li>HTTPs 1.1 requires at least the HOST request header to be provided</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Empty line (CRLF)</li>
+				<li>Message Body aka Payload(opt)</li>
+			</ul>
+		</p>
+		
+	<h3 style="text-align:left " id="res_mess"> HTTP RESPONSE MESSAGE </h3>
+		<p>
+			<ul>
+			<li>Status line (CRF- Terminated 
+			line consisting of three space- separated values)
+				<ul>
+					<li>HTTP protocol version</li>
+					<li>Status code</li>
+					<li>Reason phrase</li>
+				</ul>
+			</li>
+			<li>Message headers (general, response and/or entity headers)</li>
+			<li>Empty line (CRLF)</li>
+			<li>Message body(opt)</li>
+			</ul>
+		</p>
+	
+	<h3 style="text-align:left " id="req_meth">HTTP REQUEST METHODS </h3>
+		<p>
+			<ul>
+			<li>Get
+				<ul>
+					<li>Most commonly used</li>
+					<li>Used to request from the server the retrieval of the source 
+					identified by the request URI; the  retrieved resource is returned
+					in the message body as an entity </li>
+				</ul>
+			</li>
+			<li>Head
+				<ul>
+					<li>The entity doesn’t response</li>
+				</ul>
+			</li>
+			<li>Post</li>
+			<li>Put
+				<ul>
+					<li>store the enclosed entity in the 
+					message under the specified request URI</li>
+				</ul>
+			</li>
+			<li>Delete
+				<ul>
+					<li>delete the resource identified by the request URI</li>
+				</ul>
+			</li>
+			<li>Options</li>
+			<li>Trace
+				<ul>
+					<li>“echo” back to the client the received request</li>
+				</ul>
+			</li>
+			<li>Connect</li>
+			</ul>
+		</p>
+		
+	<h3 style="text-align:left " id="support_func">HTTP SUPPORT FOR OTHER FUNCTIONALITIES </h3>
+		<p>
+			<ul>
+				<li>Cache controls<li>
+				<li>Content media type (MIME) specification<li>
+				<li>Language and character set specifications<li>
+				<li>Content or transfer codings<li>
+				<li>Content negotiation<li>
+				<li>Client-server protocol negotiation<li>
+				<li>Persistent connections<li>
+				<li>Request pipelining<li>
+				<li>Authentications or authorizations<li>
+			</ul>
+		</p>
+		
+	<h3 style="text-align:left" id="mess_head">HTTP MESSAGE HEADERS </h3>
+		<p>
+			<ul>
+				<li>General Headers
+					<ul>
+						<li>Cache-control</li>
+						<li>Connect</li>
+						<li>Date</li>
+						<li>Pragma</li>
+						<li>Trailer</li>
+						<li>Transfer-Encoding</li>
+						<li>Upgrade</li>
+						<li>Via</li>
+						<li>Warning</li>
+					</ul>
+				</li>
+				<li>Request Header Field
+					<ul>
+						<li>Accept</li>
+						<li>Accept-charset</li>
+						<li>Accept-encoding</li>
+						<li>Accept-Language</li>
+						<li>Authorization</li>
+						<li>Expect</li>
+						<li>From</li>
+						<li>Host</li>
+						<li>If-Match</li>
+						<li>If-Modified-Since</li>
+						<li>If-None-Match</li>
+						<li>If-Range</li>
+						<li>If-Unmodified-Since</li>
+						<li>Max-forward</li>
+						<li>Proxy-Authorization</li>
+						<li>Range</li>
+						<li>Referrer</li>
+						<li>User-Agent</li>
+					</ul>
+				</li>
+				<li>Response Header Fields
+					<ul>
+						<li>Accept-Range (bytes, fetch portions)</li>
+						<li>Age( age of the resource, last modified/ETag)</li>
+						<li>E-Tag</li>
+						<li>Location(where to find the redirect)</li>
+						<li>Proxy-Authenticate</li>
+						<li>Retry-After</li>
+						<li>Server</li>
+						<li>Vary</li>
+						<li>WWW-Authenticate</li>
+					</ul>
+				</li>
+				<li>Entity Header Fields
+					<ul>
+						<li>Allow</li>
+						<li>Content-encoding</li>
+						<li>Content-language</li>
+						<li>Content-length</li>
+						<li>Content-location</li>
+						<li>Content-MD5</li>
+						<li>Content-range</li>
+						<li>Content-type</li>
+						<li>Expires</li>
+						<li>Last Modified</li>
+					</ul>
+				</li>
+			</ul>
+		</p>
+
+	<h3 style="text-align:left" id="stat_codes"> HTTP STATUS CODES</h3>
+		<p>
+			<ul>
+				<li id="stat_codes1">Informational (1xx)
+					<ul>
+						<li>100 Continue</li>
+						<li>101 Switching Protocols</li>
+					</ul>
+				</li>
+				<li id="stat_codes2">Success (2xx)
+					<ul>
+						<li>200 OK</li>
+						<li>202 Accepted</li>
+						<li>203 Non-Authoritative Information</li>
+						<li>204 No Content</li>
+						<li>205 Reset Content</li>
+						<li>206 Partial Content</li>
+					</ul>
+				</li>
+				<li id="stat_codes3">Redirection (3xx)
+					<ul>
+						<li>300 Multiple Choices</li>
+						<li>301 Moved Permanently</li>
+						<li>302 Found</li>
+						<li>303 See Other</li>
+						<li>304 Not Modified</li>
+						<li>305 Use Proxy</li>
+						<li>307 Temporary Redirect</li>
+					</ul>
+				</li>
+				<li id="stat_codes4">Client Error (4xx)
+					<ul>
+						<li>400 Bad Request</li>
+						<li>401 Unauthorized</li>
+						<li>402 Payment Required</li>
+						<li>403 Forbidden</li>
+						<li>404 Not Found</li>
+						<li>405 Method not Allowed</li>
+						<li>406 Not Acceptable</li>
+						<li>407 Proxy Authentication Required</li>
+						<li>408 Request Timeout</li>
+						<li>409 Conflict</li>
+						<li>410 Gone</li>
+						<li>411 Length Required</li>
+						<li>412 Precondition Failed</li>
+						<li>413 Request Entity Too Large</li>
+						<li>414 Request-URI Too Long</li>
+						<li>415 Unsupported Media Type</li>
+						<li>416 Request Range Not Satisfiable</li>
+						<li>417 Expectation Failed</li>
+						<li>426 Upgrade Required</li>
+					</ul>
+				</li>
+				<li id="stat_codes5">Server Error (5xx)
+					<ul>
+						<li>500 Internal Server Error</li>
+						<li>501 Not Implemented</li>
+						<li>502 Bad Gateway</li>
+						<li>503 Service Unavailable</li>
+						<li>504 Gateway Timeout</li>
+						<li>505 HTTP Version Not Supported</li>
+					</ul>
+				</li>
+			</ul>
+		</p>
+		
+</div>
+
+</body>
+</html>
