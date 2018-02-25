@@ -1,11 +1,10 @@
 #logo {
     margin: 0;
     max-width: 100%;
-    height: auto;
-    width: auto;
+    height: 15%;
+    width: 15%;
 	float: left;
 	background-color: transparent;
-	
   }
 
 img {
@@ -50,12 +49,10 @@ a {
 }
 
 h1 {
-  color: #FFF;
-
-  font-size: 50px;
-  line-height: 20px;
+  color: black;
+  font-size: 30;
+  line-height: 50%;
   font-weight: 500;
-  
 }
 .center {
     position: absolute;
@@ -93,16 +90,8 @@ button {
 }
 
 .dropdown:hover .dropdown-button {
-    background-color:darkgoldenrod;
-}
-
-
-
-i {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
+    background-color:white;
+    color: black;
 }
 
 
@@ -120,86 +109,52 @@ div#content {
 	color:black;
 	height: auto;
 	width: auto;
-	
 	}
 
-div.article {
+div.heading {
+  color: black;
+  font-size: 30;
+  line-height: 50%;
+  font-weight: 500;
+  text-align: center;
+	}
+
+div.notes {
+    margin-top: 0%;
 	height: auto;
-	width: auto;
-    margin: 20px;
-    padding: 40px;
+	width: auto;   
+    padding: 20px;
     background-color: white;
 	color:black;
 }
 
 div#footer {
-    padding: 10px;
-    color: white;
-    background-color: black;
+    padding: 0;
+    color: black;
+    background-color: white;
 
 }
 .first {
     display: inline-block;
     position: relative;
-    color: white;
-    width: 90%;
-    border: 5px solid black;
-    margin-top: 8%;
+    color: black;
+    width: 95%;
+    margin-top: 0%;
     padding: 1%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0%;
+    margin-right: 0%;
     text-align: center;
-}
-
-.second {
-    margin: 0 0 0 0;
-    width: 20%;
-    padding: 2%;
-    border: 3px solid;
-    margin-top: 3%;
-    color: darkgoldenrod;
-    float: left;
-    margin-left: 3%;
-    margin-right: auto;
-    vertical-align: baseline;
-}
-
-.second p {
-    font-size: 100%;
-    text-transform: capitalize;
-}
-
-.second b {
-    font-size: 120%;
-    text-transform: lowercase;
-}
-
-.third {
-    margin: 0 0 0 0;
-    width: 28%;
-    padding: 3%;
-    border: 3px solid;
-    margin-top: 3%;
-    color: darksalmon;
-    float: left;
-    margin-left: 6%;
-    margin-right: 3%;
-    vertical-align: baseline;
-}
-
-.third p {
-    font-size: 100%;
-    font-weight: bolder;
 }
 
 .social {
     width: 25%;
-    margin-top: 3%;
+    margin-top: 0%;
     padding: 10px;
-    color: white;
-    background-color: black;
-    margin-left: auto;
-    margin-right: 37%;
+    color: black;
+    text-align: center;
+    background-color: white;
+    margin-left: 35%;
+    margin-right: 40%;
     vertical-align: baseline;
 }
 
@@ -208,7 +163,7 @@ div#footer {
     padding: 2%;
 }
 
-.socialfa:hover {
+.socialfbthover {
     opacity: 0.5;
 }
 
@@ -216,11 +171,11 @@ div#footer {
     opacity: 0.5;
 }
 
-.socialyo:hover {
+.socialy:hover {
     opacity: 0.5;
 }
 
-.socialfa {
+.socialfb {
     background: white;
 }
 
@@ -228,7 +183,7 @@ div#footer {
     background: white;
 }
 
-.socialyo {
+.socialyt {
     background: red;
 }
 
@@ -238,17 +193,9 @@ div#footer {
     margin-left: auto;
     margin-right: auto;
     font-weight: bold;
+    color:white;
 }
 
-div#content2{
-	padding: 80px;
-	height: 600px;
-	width: auto;
-	background-image: url("2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 table, th, td {
     border: 20px white;
@@ -259,7 +206,6 @@ table, th, td {
     background-size: cover;
 	
 }
-
 
 
 .background {
