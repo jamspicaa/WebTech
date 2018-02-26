@@ -227,3 +227,31 @@ footer{
     font-family: cursive;
     font-size: 30px;
 }
+
+.prelimnotes1 {
+	margin-left: 100px;
+	margin-right: 100px;
+	background: yellow;
+}
+
+.prelimnotes1 h1{
+	text-align: center;
+}
+
+.prelimnotes1 li {
+	margin-left: 20px;
+}
+
+.prelimnotes2 {
+	margin-left: 100px;
+	margin-right: 100px;
+	background: green;
+}
+
+.prelimnotes2 h1{
+	text-align: center;
+}
+
+.prelimnotes2 li {
+	margin-left: 20px;
+}
