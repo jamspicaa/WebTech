@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html>
+<<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Technology</title>
+        <link rel="shortcut icon" href="Images/Logo.png" type="image/png">
+        <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+		<link rel="stylesheet" type="text/css" href="sample.css">
+</head>
+
 <body>
 
-<h2>WWW</h2>
-<ul style="list-style-type:square">
-  <li><a href="#www_histo">History</a></li>
-</ul>
+<header class="navbar">
+				<div class="dropdown">
+                    <button class="drop_button">WWW</button>
+                    <div class="dropdown_content">
+                        <a href="#www_histo">History</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="drop_button">HTTP</button>
+                    <div class="dropdown_content">
+                       <a href="#http_histo">History</a>
+					   <a href="#vers_histo">Version history</a>
+					   <a href="#funda">HTTP Fundamentals</a>
+					   <a href="#resource_add">HTTP Resource Addressing</a>
+					   <a href="#req_mess">HTTP Request Message</a>
+					   <a href="#res_mess">HTTP Response Message</a>
+					   <a href="#req_meth">HTTP Request Methods</a>
+					   <a href="#support_func">HTTP Support for other Functionalities</a>
+					   <a href="#mess_head">HTTP Message Headers</a>
+					   <a href="#stat_codes">HTTP Status Codes</a>
+                    </div>
+                 </div>
+                <span class="Text_navbar">Web Technology 2018</span>
+        </header>
 
-<h2>HTTP</h2>
 
-<ul style="list-style-type:square">
-  <li><a href="#http_histo">History</a></li>
-  <li><a href="#vers_histo">Version history</a></li>
-  <li><a href="#funda">HTTP Fundamentals</a></li>
-  <li><a href="#resource_add">HTTP Resource Addressing</a></li>
-  <li><a href="#req_mess">HTTP Request Message</a></li>
-  <li><a href="#res_mess">HTTP Response Message</a></li>
-  <li><a href="#req_meth">HTTP Request Methods</a></li>
-  <li><a href="#support_func">HTTP Support for other Functionalities</a></li>
-  <li><a href="#mess_head">HTTP Message Headers</a></li>
-  <li><a href="#stat_codes">HTTP Status Codes</a>
-	<ul>
-		<li><a href="#stat_codes1">Informational (1xx)</a></li>
-		<li><a href="#stat_codes2">Success (2xx)</a></li>
-		<li><a href="#stat_codes3">Redirection (3xx)</a></li>
-		<li><a href="#stat_codes4">Client Error (4xx)</a></li>
-		<li><a href="#stat_codes5">Server Error (5xx)</a></li>
-	</ul>
-  </li>
-</ul>
-
-<div>
-	<h1 style="text-align:center"> WORLD WIDE WEB (WWW)</h1>
+<div >
+	<h1 class="sample">WORLD WIDE WEB (WWW)</h1>
 	<p>World wide web (WWW) or web is like a container of the 
 	resources identified by Uniform Resource Locators(URLs) that is accessible using the Internet</p>
-	<h3 style="text-align:left " id="www_histo"> HISTORY </h3>
+	<h3> HISTORY </h3>
 			<p>
-				<ul>
+				<ul style="list-style-type:disc">
 					<li>A collection of web resources and applications that 
 					let us access those applications with the use of the Internet.</li>
 					<li>Established around 1990</li>
 					<li>Invented by Sir Tim Berners-Lee</li>
-					<li>Web Resources
+				</ul>	
+					<h3>Web Resources</h3>
 						<ul>
 							<li>Static</li>
 							<li>Dynamic</li>
 						</ul>
-					</li>
-					<li>The Internet
+					<h3>The Internet</h3>
 						<ul>
 							<li>Infrastructure
 								<ul>
@@ -57,15 +64,13 @@
 								</ul>
 							</li>
 						</ul>
-					</li>
-					<li>WWW Technologies
+					<h3>WWW Technologies</h3>
 						<ul>
 							<li> HTTP, HTML, CSS, Client side scripting</li>
 							<li>Server Side Scripting</li>
 							<li>Web Servers, Web Clients</li>
 							<li>Web Applications</li>
 						</ul>
-					</li>
 			</p>
 </div>
 

@@ -1,0 +1,11 @@
+@font-face{
+	font-family:headone;
+	src:url("headone.woff"),
+		url("headone.tff"),
+		url("headone.woff2"),
+		url("headone.eot");
+}
+
+.sample{
+	font-family:headone;
+}
