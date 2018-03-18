@@ -1,0 +1,193 @@
+Commits on Feb 26, 2018
+update
+
+@carylmarie
+carylmarie committed 2 hours ago
+51b145c  
+update
+
+@carylmarie
+carylmarie committed 3 hours ago
+8dce1c7  
+sample for font-face
+
+@carylmarie
+carylmarie committed 3 hours ago
+8bc191e  
+Add files via upload
+
+@jamspicaa
+jamspicaa committed 5 hours ago
+Verified   badfec3  
+Latest Website
+
+@jamspicaa
+jamspicaa committed 5 hours ago
+Verified   be8156f  
+Commits on Feb 25, 2018
+Add files via upload
+
+@2163797
+2163797 committed 21 hours ago
+Verified   9c20bf1  
+Add files via upload
+
+@2163797
+2163797 committed 21 hours ago
+Verified   96a9437  
+Adding prelims.html file  …
+
+@carylmarie
+carylmarie committed 2 days ago
+4de7bbe  
+Commits on Feb 24, 2018
+moved the notes I added  …
+
+@carylmarie
+carylmarie committed 2 days ago
+beb4823  
+added a notes
+
+@carylmarie
+carylmarie committed 2 days ago
+2ecb3b8  
+READ ME
+
+@jamspicaa
+jamspicaa committed 2 days ago
+Verified   297c6dc  
+Add files via upload
+
+@2163797
+2163797 committed 2 days ago
+Verified   9ee93b0  
+Add files via upload
+
+@2163797
+2163797 committed 2 days ago
+Verified   a254020  
+Updated index.html and style.css
+
+@jamspicaa
+jamspicaa committed 2 days ago
+Verified   6c7ec67  
+Add files via upload
+
+@2163797
+2163797 committed 2 days ago
+Verified   3f95a5c  
+Moved Images folder to HTML folder.
+
+@2161757
+2161757 committed 2 days ago
+e107fa6  
+Organized the files.
+
+@2161757
+2161757 committed 2 days ago
+0874e52  
+Merge branch 'master' of https://github.com/jamspicaa/WebTech  …
+
+@2161757
+2161757 committed 2 days ago
+448a015  
+Organized the files.
+
+@2161757
+2161757 committed 2 days ago
+bf37698  
+Add files via upload
+
+@2163797
+2163797 committed 2 days ago
+Verified   c1923f7  
+Merge pull request #1 from jamspicaa/HTML  …
+
+@jamspicaa
+jamspicaa committed 2 days ago
+Verified   177dea5  
+Commits on Feb 23, 2018
+Add files via upload
+
+@carylmarie
+carylmarie committed 3 days ago
+Verified   445c80f  
+Merge branch 'master' of https://github.com/jamspicaa/WebTech
+
+@carylmarie
+carylmarie committed 3 days ago
+f2cfac6  
+adding a picture for the html
+
+@carylmarie
+carylmarie committed 3 days ago
+70bee21  
+Commits on Feb 22, 2018
+Add files via upload
+
+@sampaulpogi
+sampaulpogi committed 4 days ago
+Verified   a281267  
+Commits on Feb 21, 2018
+Add files via upload
+
+@sampaulpogi
+sampaulpogi committed 5 days ago
+Verified   4a514b7  
+Commits on Feb 20, 2018
+Add files via upload
+
+@jamspicaa
+jamspicaa committed 6 days ago
+Verified   d703e16  
+Add files via upload
+
+@jamspicaa
+jamspicaa committed 6 days ago
+Verified   c6188d9  
+Commits on Feb 16, 2018
+Add files via upload
+
+@jamspicaa
+jamspicaa committed 10 days ago
+Verified   d3d5d57  
+Commits on Feb 15, 2018
+Add files via upload
+
+@jamspicaa
+jamspicaa committed 11 days ago
+Verified   795aab9  
+Commits on Feb 11, 2018
+Add files via upload
+
+@jamspicaa
+jamspicaa committed 15 days ago
+Verified   1f8ae93  
+Research about the topic  …
+
+@carylmarie
+carylmarie committed 15 days ago
+fd45e41  
+Add files via upload
+
+@sampaulpogi
+sampaulpogi committed 15 days ago
+Verified   30138fb  
+Commits on Feb 9, 2018
+Update README.md
+
+@jamspicaa
+jamspicaa committed 17 days ago
+Verified   3290b91  
+Add files via upload
+
+@jamspicaa
+jamspicaa committed 17 days ago
+Verified   6ddd19b  
+
+Commits on Feb 10, 2018
+first commit
+
+JamJam
+Jam authored and Jam committed 16 days ago
+2b210df  
