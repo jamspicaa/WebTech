@@ -13,13 +13,28 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
 
 body{
     background-image: url(Pictures/cute.gif);
     background-size: cover;
     overflow: hidden;
+}
+
+#Comet{
+    transform: rotate(135deg);
+    width: 6%;
+    height: auto;
+    margin-left: 2%;
+    animation: sidewards 1s infinite;
+    position: relative;
+}
+
+@keyframes sidewards{
+    0%{right: 20px;}
+    50%{right: 0px;}
+    100%{right: 20px}
 }
 
 #Image-Center-Landing{
@@ -36,7 +51,7 @@ body{
 
 #Title{
     position: absolute;
-    top: 48%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Font1";
@@ -71,10 +86,9 @@ body{
 }
 
 .Rows-For-Topics {
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 6%;
-    font-family: "Font2";
-    
+    font-family: "Font2"; 
 }
 
 .Rows-For-Topics:after {
@@ -83,40 +97,61 @@ body{
     clear: both;
 }
 
+.Button-Formats{
+    background-color: aquamarine;
+    color:deepskyblue
+}
+
 .Column {
     float: left;
+    margin: 1%;
     height: 20%;
     width: 30%;
     padding: 2%;
+    border-radius: 9px;
     text-align: center;
-    border-radius: 5px;
-    margin: 1%;
-    font-size: 3vh;
+    font-size: 6vh;
+	font-family: "Font2";
+    background-color: #7FFFD4;
+    color: #00bfff;
 }
 
-.Button-Rows-Topic1{
-  width: 200px;
-  height: 20px;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  color: #FFF;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 4px;
-  background: rgba(#000000, 0.2);
-  padding: 15px 20px;
-  transition: all .5s ease;
-  border-radius: 3px;
-  cursor: pointer;
+.Column:hover{
+    background-color: cornsilk;
+    color: crimson;
+}
+
+.Astronaut{
+    margin-top: 3%;
     
-  a {
-    text-decoration: none;
-    color: #FFF;
-  }
 }
 
-.is-active {
-  box-shadow: 0 20px 5px -10px rgba(#000, 0.4);
-  transform: translateY(10px);
+.Image-Astro{
+    width: 15%;
+    height: auto;
+    padding: 0;
+    margin-left: 4%;
+    margin-top: 3%;
+    animation: astro 1s infinite;
+    position: relative;
 }
 
+@keyframes astro{
+    0%{top: 20px;}
+    25%{top: 40px;}
+    50%{top: 60px;}
+    75%{top: 80px;}
+    100%{top: 0px}
+}
+
+#AstroBoy{
+    animation: astroboys 1s infinite;
+}
+
+@keyframes astroboys{
+    0%{top: 0px;}
+    25%{top: 70px;}
+    50%{top: 60px;}
+    75%{top: 40px;}
+    100%{top: 20px}
+}
