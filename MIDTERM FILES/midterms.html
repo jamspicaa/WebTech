@@ -1,4 +1,4 @@
-<DOCTYPE!/>
+<!DOCTYPE/>
 <html>
     <head></head>
     <body>
@@ -6,12 +6,18 @@
         <ul>
         <li><p>Language used to specify the presentation aspects (i.e. layout and formatting of structurally marked up (e.g. HTML, XML, XHTML, SVG, etc.)
 document).</p></li>
+            
         <li><p>Developed by Hakon Wium Lie (HTML Cascading Style Sheets / CHSS) and Bert Bos (Stream-based Style Sheet Proposal / SSP)</p></li>
-        <h3>Versions</h3>
+            
+        <h2>Versions</h2>
+            
         <li><p>CSS 1, CSS 2, CSS 2.1, CSS 3 (structural semantic markup / modularizes CSS 2.1)</p></li>
-        <h3>CSS Rules</h3>
+        <h2>CSS Syntax</h2>
             <ul>
                 <h3>Selectors</h3>
+                
+                <p>The selector points to the HTML element you want to style.</p>
+                
                 <li>Universal selector
                     <br>*{
                     <br>}
@@ -79,6 +85,8 @@ document).</p></li>
                 </li>
                 
                 <h3>Declaration Block</h3>
+                <p>The declaration block contains one or more declarations separated by semicolons.Each declaration includes a CSS property name and a value, which is also separated by a colon. A CSS declaration always ends with a semicolon, and it is surrounded by a curly braces.</p>
+                
                 <li>Properties
                     <ul>
                         <li>Visual, aural, paged, interactive</li>
@@ -126,12 +134,249 @@ document).</p></li>
                                         <li>Number of element names and pseudo-elements in selector</li>
                                     </ul>
                                 </li>
+                                
+                                <li>By order</li>
                             </ul>
                         </li>
                         <li></li>
                     </ul>
                 </li>
+            </ul>
+                <h2>CSS comments</h2>
+                <p> Comments are used to explain the code, and it may help when you edit the source code in the future. This are ignored by browsers. A CSS comment starts with /* and ends with */. This can also span multiple lines:</p>
+                <img src="Photos/comment.JPG" alt="sample code for comment">
                 
+                <h2>Ways to insert CSS</h2>
+                <p>There are three ways on how to insert a style sheet:</p>
+                <ol>
+                    <li>External Style Sheet
+                        <ul>
+                            <li>When using an external style sheet, you can only edit just one file and the look of the entire website will change.</li>
+                            
+                            <li>Each page must include a reference to the external style sheet file inside the &lt;link&gt; element. The &lt;link&gt; element goes inside the &lt;head&gt; section: </li>
+                                
+                            <li>It can be created in any text editor and the style sheet must be saved with a .css file extension.</li>
+                            
+                            <li>Take note that the file  must not contain a html tags.</li>
+                        </ul>
+                        
+                    <p>Here is an example:</p>
+                    <pre>
+                    <code>
+                        &lt;html&gt;
+                        &lt;head&gt;
+                                &lt;meta charset="UTF-8"&gt;
+                                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                &lt;title&gt;Web Technology&lt;/title&gt;
+                                &lt;link rel="shortcut icon" href="Images/Logo.png" type="image/png"&gt;
+                                &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+
+                        &lt;/head&gt;
+
+                    </code>
+                    </pre>
+                        
+                    </li>
+                    <li>Internal Style Sheet</li>
+                        <ul>
+                            <li>Internal style sheet are used if there is one single page that have a unique style.</li>
+                            
+                            <li>It is defined within the &lt;style&gt; element, inside the &lt;head&gt; section of an HTML page:</li>
+                         </ul>
+                    <p>Here is an example:</p>
+                    <pre>
+                    <code>
+                        &lt;head&gt;
+                        &lt;style&gt;
+                            body{
+                                background-color: blue;
+                            }
+
+                            h1{
+                                color:green;
+                                margin-left: 20%;
+                            }
+                        &lt;/style&gt;
+                        &lt;/head&gt;
+                    </code>
+                    </pre>
+                    
+                    <li>Inline Style</li>
+                    <ul>
+                            <li>Inline style sheet are used to apply unique style for a single element.</li>
+                        <li>To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</li>
+                    </ul>
+                     <p>Here is an example:</p>
+                    <pre>
+                    <code>
+                       &lt;h1 style="color:green; margin-left:20%;"&gt;Lorem ipsum dolor sit amet.&lt;/h1&gt;
+
+                    </code>
+                    </pre>
+                </ol>
+                <h2>Cascading Order</h2>
+                <p>Whate style will be used when tehre are more than one style specified for an HTML element?</p>
+                
+                <p>As a rule we can state that all of the styles will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:</p>
+                <ol>
+                    <li>Inline style (inside an HTML element)</li>
+                    <li>External and internal style sheets (in the head section)</li>
+                    <li>Browser default</li>
+                </ol>
+                <p>So, an inline style (inside a specific HTML element) has the highest priority, which means that it will override a style defined inside the &lt;head&gt; tag, or in an external style sheet, or a browser default value.</p>
+            <h2>CSS Colors</h2>
+            <p>Colors are indicated utilizing predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+            <ul>
+                <h3>Color Names</h3>
+                
+                <li><p>In HTML, a color can be determined by utilizing a color name.</p></li>
+                
+                <img src="Photos/colornames.JPG" alt="Color Names example">
+                 <p>Here is an example:</p>
+                <pre><code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;body&gt;
+                
+                    &lt;h1 style="background-color:Red;"&gt;Red&lt;/h1&gt;
+                    &lt;h1 style="background-color:Orange;"&gt;Orange&lt;/h1&gt;
+                    &lt;h1 style="background-color:Yellow;"&gt;Yellow&lt;/h1&gt;
+                    &lt;h1 style="background-color:Green;"&gt;Green&lt;/h1&gt;
+                    &lt;h1 style="background-color:Blue;"&gt;Blue&lt;/h1&gt;
+                    &lt;h1 style="background-color:Indigo;"&gt;Indigo&lt;/h1&gt;
+                    &lt;h1 style="background-color:Violet;"&gt;Violet&lt;/h1&gt;
+                    &lt;h1 style="background-color:Gray;"&gt;Gray&lt;/h1&gt;
+
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code></pre>
+                
+                
+                <h3>Background Color</h3>
+                <li><p>You can set a background color for the HTML element: </p></li>
+                 <img src="Photos/bgcolor.JPG" alt="Color Names example">
+                <p>Here is an example:</p>
+                <pre><code>
+                &lt;!DOCTYPE/&gt;
+                &lt;html&gt;
+                &lt;style&gt;
+                    body{
+                        font-family:sans-serif;
+                    }
+
+                    h1{
+                        padding: 5%;
+                        text-align: center;
+
+                    }
+
+                    p{
+                        padding: 5%;
+                        text-align: justify;
+                    }
+                &lt;/style&gt;
+                &lt;body&gt;
+                    &lt;h1 style="background-color: Powderblue"&gt;Lorem ipsum dolor sit amet.&lt;/h1&gt;
+                    &lt;p style="background-color: Violet"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet arcu faucibus, maximus tellus ac, aliquam ligula. Aliquam interdum elit ac auctor gravida. Morbi porta sodales luctus. Suspendisse potenti. Ut eleifend ante a nulla dignissim tincidunt. Pellentesque ac egestas tortor. Donec consequat, urna sed porta porta, elit enim rutrum sapien, sed pulvinar eros dolor sed urna. Vestibulum velit leo, imperdiet maximus dapibus id, posuere sit amet ipsum. Vestibulum tristique, arcu sit amet mattis venenatis, lectus orci vestibulum mauris, vitae malesuada metus nunc at velit. Vestibulum venenatis convallis lacinia.&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code></pre>
+                
+                <h3>Text Color</h3>
+                
+                <li><p>You can set the color text.</p></li>
+                    
+                <img src="Photos/textcolor.JPG" alt="Text color sample">
+                <p>Here is an example:</p>
+                <pre>
+                <code>
+                &lt;!DOCTYPE/&gt;
+                &lt;html&gt;
+                &lt;style&gt;
+                    body{
+                        padding: 5%;
+                        font-family:sans-serif;
+                    }
+
+                    h1{
+                        padding: 5%;
+                        text-align: center;
+
+                    }
+
+                    p{
+                        padding: 5%;
+                        text-align: justify;
+                    }
+                &lt;/style&gt;
+                &lt;body&gt;
+                    &lt;h1 style="color: Blue"&gt;Lorem ipsum dolor sit amet.&lt;/h1&gt;
+                    &lt;p style="color: Violet"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet arcu faucibus, maximus tellus ac, aliquam ligula. Aliquam interdum elit ac auctor gravida. Morbi porta sodales luctus. Suspendisse potenti. Ut eleifend ante a nulla dignissim tincidunt. Pellentesque ac egestas tortor. Donec consequat, urna sed porta porta, elit enim rutrum sapien, sed pulvinar eros dolor sed urna. Vestibulum velit leo, imperdiet maximus dapibus id, posuere sit amet ipsum. Vestibulum tristique, arcu sit amet mattis venenatis, lectus orci vestibulum mauris, vitae malesuada metus nunc at velit. Vestibulum venenatis convallis lacinia.&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code>
+                </pre>
+                    
+                <h3>Border Color</h3>
+                
+                <li><p>You can set the color of borders.</p></li>
+                
+                <h1> LAGAY TAYO EXAMPLE DITO</h1>
+                    
+                <h3>Color Values</h3>
+                
+                <li><p>Colors in HTML can also be specified using the RGB values, HEX values, HSL values, RGBA values and HSLA values.</p></li>
+                
+                <h1> LAGAY TAYO EXAMPLE DITO</h1>
+                    
+                <h3>RGB Value</h3>
+                <li>A color can be specified as an RGB in HTML by using this fomula: 
+                <br> <b>rgb(<i>red, green, blue</i>)</b>
+                </li>
+                <li>Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.</li>
+                <li>For example, rgb(255, 0, 0) is displayed as blue, because blue is set to its highest value (255) and the others are set to 0.</li>
+                <li>To display the color black, all color parameters must be set to 0, like this: rgb(0, 0, 0).</li>
+                <li>To display the color white, all color parameters must be set to 255, like this: rgb(255, 255, 255).</li>
+                <h1>EXAMPLE CODE HERE WITH OUTPUT</h1>
+                    
+                <h3>HEX Value</h3>
+                <li>A color can be specified as hexadecimal value in HTML in the form: <b><i>#rrggbb</i></b>
+                </li>
+                <li> Wherein rr is red, gg is green and bb is blue are hexadecimal values between 00 and ff, which is same as decimal 0-255.</li>
+                <li>For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).</li>
+                <h1>EXAMPLE CODE HERE WITH OUTPUT</h1>
+                    
+                <h3>HSL Value</h3>
+                <li>A color can be specified in HTML by using hue, saturation and lightness (HSL) in the form: <b>hsl(<i>hue, saturation, lightness</i>)</b>
+                </li>
+                <li>Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.</li>
+                <li>Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.
+                    <ul>
+                        <li>Saturation can be describe as the intensity of a color.</li>
+                        <li>100% is pure color, no shades of gray</li>
+                        <li>50% is 50% gray, but you can still see the color.</li>
+                        <li>0% is completely gray, you can no longer see the color.</li>
+                    </ul>
+                </li>
+                <li>Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white.
+                     <ul>
+                        <li>The lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light) 100% means full lightness (white).</li>
+                    </ul>
+                </li>
+                 <li>Shades of gray are often defined by setting the hue and saturation to 0, and adjust the lightness from 0% to 100% to get darker/lighter shades</li>
+                <h1>EXAMPLE CODE HERE WITH OUTPUT</h1>
+                    
+                 <h3>RGBA Value</h3>
+                <li>RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.An RGBA color value is specified with: <b>rgba (<i>red, green, blue, alpha</i>)</b>
+                </li>
+                <li> The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all).</li>
+                <h1>EXAMPLE CODE HERE WITH OUTPUT</h1>
+                    
+                <h3>HSLA Value</h3>
+                <li>HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.An HSLA color value is specified with:<b>hsla(<i>hue, saturation, lightness, alpha</i>)</b>
+                </li>
+                <li> The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all)</li>
+                <h1>EXAMPLE CODE HERE WITH OUTPUT</h1>
             </ul>
         </ul>
     </body>
