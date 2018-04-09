@@ -277,7 +277,12 @@ document).</p></li>
                 &lt;/style&gt;
                 &lt;body&gt;
                     &lt;h1 style="background-color: Powderblue"&gt;Lorem ipsum dolor sit amet.&lt;/h1&gt;
-                    &lt;p style="background-color: Violet"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet arcu faucibus, maximus tellus ac, aliquam ligula. Aliquam interdum elit ac auctor gravida. Morbi porta sodales luctus. Suspendisse potenti. Ut eleifend ante a nulla dignissim tincidunt. Pellentesque ac egestas tortor. Donec consequat, urna sed porta porta, elit enim rutrum sapien, sed pulvinar eros dolor sed urna. Vestibulum velit leo, imperdiet maximus dapibus id, posuere sit amet ipsum. Vestibulum tristique, arcu sit amet mattis venenatis, lectus orci vestibulum mauris, vitae malesuada metus nunc at velit. Vestibulum venenatis convallis lacinia.&lt;/p&gt;
+                    &lt;p style="background-color: Violet"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Pellentesque sit amet arcu faucibus, maximus tellus ac, aliquam ligula. Aliquam interdum elit ac auctor gravida. 
+                    Morbi porta sodales luctus. Suspendisse potenti. Ut eleifend ante a nulla dignissim tincidunt. Pellentesque ac egestas tortor. 
+                    Donec consequat, urna sed porta porta, elit enim rutrum sapien, sed pulvinar eros dolor sed urna. 
+                    Vestibulum velit leo, imperdiet maximus dapibus id, posuere sit amet ipsum. Vestibulum tristique, arcu sit 
+                    amet mattis venenatis, lectus orci vestibulum mauris, vitae malesuada metus nunc at velit. Vestibulum venenatis convallis lacinia.&lt;/p&gt;
                 &lt;/body&gt;
                 &lt;/html&gt;
                 </code></pre>
@@ -311,7 +316,12 @@ document).</p></li>
                 &lt;/style&gt;
                 &lt;body&gt;
                     &lt;h1 style="color: Blue"&gt;Lorem ipsum dolor sit amet.&lt;/h1&gt;
-                    &lt;p style="color: Violet"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet arcu faucibus, maximus tellus ac, aliquam ligula. Aliquam interdum elit ac auctor gravida. Morbi porta sodales luctus. Suspendisse potenti. Ut eleifend ante a nulla dignissim tincidunt. Pellentesque ac egestas tortor. Donec consequat, urna sed porta porta, elit enim rutrum sapien, sed pulvinar eros dolor sed urna. Vestibulum velit leo, imperdiet maximus dapibus id, posuere sit amet ipsum. Vestibulum tristique, arcu sit amet mattis venenatis, lectus orci vestibulum mauris, vitae malesuada metus nunc at velit. Vestibulum venenatis convallis lacinia.&lt;/p&gt;
+                    &lt;p style="color: Violet"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet arcu faucibus, 
+                    maximus tellus ac, aliquam ligula. Aliquam interdum elit ac auctor gravida. Morbi porta sodales luctus. Suspendisse potenti. 
+                    Ut eleifend ante a nulla dignissim tincidunt. Pellentesque ac egestas tortor. Donec consequat, urna sed porta porta, elit 
+                    enim rutrum sapien, sed pulvinar eros dolor sed urna. Vestibulum velit leo, imperdiet maximus dapibus id, posuere sit amet ipsum.
+                    Vestibulum tristique, arcu sit amet mattis venenatis, lectus orci vestibulum mauris, vitae malesuada metus nunc at velit. 
+                    Vestibulum venenatis convallis lacinia.&lt;/p&gt;
                 &lt;/body&gt;
                 &lt;/html&gt;
                 </code>
@@ -321,13 +331,70 @@ document).</p></li>
                 
                 <li><p>You can set the color of borders.</p></li>
                 
-                <h1> LAGAY TAYO EXAMPLE DITO</h1>
+                <img src="Photos/border.JPG" alt="sample for border color">
+                 <p>Here is an example:</p>
+                <pre>
+                <code>
+                    &lt;!DOCTYPE/&gt;
+                    &lt;html&gt;
+                    &lt;style&gt;
+                        body{
+                            padding: 5%;
+                            font-family:sans-serif;
+                        }
+
+                        h1{
+                            padding: 5%;
+                            text-align: center;
+
+                        }
+                    &lt;/style&gt;
+                    &lt;body&gt;
+                        &lt;h1 style="border:2px solid Blue"&gt;Lorem ipsum dolor sit amet.&lt;/h1&gt;
+                        &lt;h1 style="border:5px dotted Violet"&gt;Lorem ipsum dolor sit amet.&lt;/h1&gt;
+                        &lt;h1 style="border:8px dashed Green"&gt;Lorem ipsum dolor sit amet.&lt;/h1&gt;
+
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+                </pre>
                     
                 <h3>Color Values</h3>
                 
                 <li><p>Colors in HTML can also be specified using the RGB values, HEX values, HSL values, RGBA values and HSLA values.</p></li>
                 
-                <h1> LAGAY TAYO EXAMPLE DITO</h1>
+                <img src="Photos/colorvalues.JPG" alt="sample for color values">
+                <p> This is the same color as name "Blue", but 50% transparent.</p>
+                <img src="Photos/colorvaluestransparent.JPG" alt="sample for color values but 50% transparent">
+                 <p>Here is an example:</p>
+                <pre>
+                <code>
+                    &lt;!DOCTYPE/&gt;
+                    &lt;html&gt;
+                    &lt;style&gt;
+
+                        h1{
+                            text-align: center;
+                            font-family:sans-serif;
+
+                        }
+
+                    &lt;/style&gt;
+                    &lt;body&gt;
+                        &lt;h1 style="background-color:Blue;"&gt;Blue&lt;/h1&gt;
+                        &lt;h1 style="background-color:rgb(0, 0, 255);"&gt;rgb(0, 0, 255)&lt;/h1&gt;
+                        &lt;h1 style="background-color:#0000FF;"&gt;#0000FF&lt;/h1&gt;
+                        &lt;h1 style="background-color:hsl(240, 100%, 50%);"&gt;hsl(240, 100%, 50%)&lt;/h1&gt;
+                        &lt;h1 style="background-color:hsla(240, 100%, 50%,1.0);"&gt;hsla(240, 100%, 50%,1.0)&lt;/h1&gt;
+                        
+                        /* This is 50% transparent.*/
+                        
+                        &lt;h1 style="background-color:rgb(0, 0, 255, 0.5);"&gt;rgb(0, 0, 255, 0.5)&lt;/h1&gt;
+                        &lt;h1 style="background-color:hsla(240, 100%, 50%,0.5);"&gt;hsla(240, 100%, 50%,0.5)&lt;/h1&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+                </pre>
                     
                 <h3>RGB Value</h3>
                 <li>A color can be specified as an RGB in HTML by using this fomula: 
@@ -337,14 +404,69 @@ document).</p></li>
                 <li>For example, rgb(255, 0, 0) is displayed as blue, because blue is set to its highest value (255) and the others are set to 0.</li>
                 <li>To display the color black, all color parameters must be set to 0, like this: rgb(0, 0, 0).</li>
                 <li>To display the color white, all color parameters must be set to 255, like this: rgb(255, 255, 255).</li>
-                <h1>EXAMPLE CODE HERE WITH OUTPUT</h1>
+               
+                <img src="Photos/rgb.JPG" alt="Color Names example">
+                <p>Here is an example:</p>
+                <pre><code>
+                &lt;!DOCTYPE/&gt;
+                &lt;html&gt;
+                &lt;style&gt;
+
+                    h1{
+                        text-align: center;
+                        font-family:sans-serif;
+
+                    }
+
+                &lt;/style&gt;
+                &lt;body&gt;
+
+                    &lt;h1 style="background-color:rgb(255, 0, 0);"&gt;rgb(255, 0, 0)&lt;/h1&gt;
+                    &lt;h1 style="background-color:rgb(0, 255, 0);"&gt;rgb(0, 255, 0)&lt;/h1&gt;
+                    &lt;h1 style="background-color:rgb(0, 0, 255);"&gt;rgb(0, 0, 255)&lt;/h1&gt;
+                    &lt;h1 style="background-color:rgb(248, 139, 234);"&gt;rgb(248, 139, 234)&lt;/h1&gt;
+                    &lt;h1 style="background-color:rgb(139, 248, 214);"&gt;rgb(139, 248, 214)&lt;/h1&gt;
+                    &lt;h1 style="background-color:rgb(251, 255, 52);"&gt;rgb(251, 255, 52)&lt;/h1&gt;
+                    &lt;h1 style="color: rgb(255,255,255);background-color:rgb(0, 0, 0);"&gt;rgb(0, 0, 0)&lt;/h1&gt;
+                    &lt;h1 style="border: 1px solid rgb(0, 0, 0);background-color:rgb(255, 255, 255);"&gt;rgb(255, 255, 255)&lt;/h1&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code></pre>
                     
                 <h3>HEX Value</h3>
                 <li>A color can be specified as hexadecimal value in HTML in the form: <b><i>#rrggbb</i></b>
                 </li>
                 <li> Wherein rr is red, gg is green and bb is blue are hexadecimal values between 00 and ff, which is same as decimal 0-255.</li>
                 <li>For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).</li>
-                <h1>EXAMPLE CODE HERE WITH OUTPUT</h1>
+                <img src="Photos/hex.JPG" alt="Color Names example">
+                <p>Here is an example:</p>
+                <pre><code>
+                &lt;!DOCTYPE/&gt;
+                &lt;html&gt;
+                &lt;style&gt;
+
+                    h1{
+                        text-align: center;
+                        font-family:sans-serif;
+
+                    }
+
+                &lt;/style&gt;
+                &lt;body&gt;
+
+                    &lt;h1 style="background-color:#FF0000;"&gt;#FF0000&lt;/h1&gt;
+                    &lt;h1 style="background-color:#00FF00;"&gt;#00FF00&lt;/h1&gt;
+                    &lt;h1 style="background-color:#0000FF;"&gt;#0000FF&lt;/h1&gt;
+                    &lt;h1 style="background-color:#F88BEA;"&gt;#F88BEA&lt;/h1&gt;
+                    &lt;h1 style="background-color:#8BF8D6;"&gt;#8BF8D6&lt;/h1&gt;
+                    &lt;h1 style="background-color:#FBFF34;"&gt;#FBFF34&lt;/h1&gt;
+                    &lt;h1 style="color:#FFFFFF;background-color:#000000;"&gt;#000000&lt;/h1&gt;
+                    &lt;h1 style="border: 1px solid #000000;background-color:#FFFFFF;"&gt;#FFFFFF&lt;/h1&gt;
+
+
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code></pre>
                     
                 <h3>HSL Value</h3>
                 <li>A color can be specified in HTML by using hue, saturation and lightness (HSL) in the form: <b>hsl(<i>hue, saturation, lightness</i>)</b>
