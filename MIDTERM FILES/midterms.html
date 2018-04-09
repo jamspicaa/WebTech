@@ -405,7 +405,7 @@ document).</p></li>
                 <li>To display the color black, all color parameters must be set to 0, like this: rgb(0, 0, 0).</li>
                 <li>To display the color white, all color parameters must be set to 255, like this: rgb(255, 255, 255).</li>
                
-                <img src="Photos/rgb.JPG" alt="Color Names example">
+                <img src="Photos/rgb.JPG" alt="rgb example">
                 <p>Here is an example:</p>
                 <pre><code>
                 &lt;!DOCTYPE/&gt;
@@ -438,7 +438,7 @@ document).</p></li>
                 </li>
                 <li> Wherein rr is red, gg is green and bb is blue are hexadecimal values between 00 and ff, which is same as decimal 0-255.</li>
                 <li>For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).</li>
-                <img src="Photos/hex.JPG" alt="Color Names example">
+                <img src="Photos/hex.JPG" alt="Hex example">
                 <p>Here is an example:</p>
                 <pre><code>
                 &lt;!DOCTYPE/&gt;
@@ -471,6 +471,35 @@ document).</p></li>
                 <h3>HSL Value</h3>
                 <li>A color can be specified in HTML by using hue, saturation and lightness (HSL) in the form: <b>hsl(<i>hue, saturation, lightness</i>)</b>
                 </li>
+                 <img src="Photos/hsl.JPG" alt="HSL example">
+                <p>Here is an example:</p>
+                <pre><code>
+                &lt;!DOCTYPE/&gt;
+                    &lt;html&gt;
+                    &lt;style&gt;
+
+                        h1{
+                            text-align: center;
+                            font-family:sans-serif;
+
+                        }
+
+                    &lt;/style&gt;
+                    &lt;body&gt;
+
+                        &lt;h1 style="background-color:hsl(0, 100%, 50%)"&gt;hsl(0, 100%, 50%)&lt;/h1&gt;
+                        &lt;h1 style="background-color:hsl(240, 100%, 50%);"&gt;hsl(240, 100%, 50%)&lt;/h1&gt;
+                        &lt;h1 style="background-color:hsl(120, 100%, 25%);"&gt;hsl(120, 100%, 25%)&lt;/h1&gt;
+                        &lt;h1 style="background-color:hsl(308, 43%, 76%)"&gt;hsl(308, 43%, 76%)&lt;/h1&gt;
+                        &lt;h1 style="background-color:hsl(162, 45%, 75%);"&gt;hsl(162, 45%, 75%)&lt;/h1&gt;
+                        &lt;h1 style="background-color:hsl(61, 80%, 60%);"&gt;hsl(61, 80%, 60%)&lt;/h1&gt;
+                        &lt;h1 style="color:hsl(0, 0%, 100%);background-color:hsl(0, 0%, 0%);"&gt;hsl(0, 0%, 0%)&lt;/h1&gt;
+                        &lt;h1 style="border: 1px solid hsl(0, 0%, 0%);background-color:hsl(0, 0%, 100%);"&gt;hsl(0, 0%, 100%)&lt;/h1&gt;
+
+
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                    </code></pre>
                 <li>Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.</li>
                 <li>Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.
                     <ul>
@@ -480,26 +509,456 @@ document).</p></li>
                         <li>0% is completely gray, you can no longer see the color.</li>
                     </ul>
                 </li>
+                 <img src="Photos/saturation.JPG" alt="Saturation example">
+                <p>Here is an example:</p>
+                <pre>
+                <code>
+                &lt;!DOCTYPE/&gt;
+                &lt;html&gt;
+                &lt;style&gt;
+
+                    body{
+                        text-align: center;
+                        font-family:sans-serif;
+
+                    }
+
+                &lt;/style&gt;
+                &lt;body&gt;
+                &lt;h1 style="background-color:hsl(0, 100%, 50%);"&gt;hsl(0, 100%, 50%)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsl(0, 80%, 50%);"&gt;hsl(0, 80%, 50%)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsl(0, 60%, 50%);"&gt;hsl(0, 60%, 50%)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsl(0, 40%, 50%);"&gt;hsl(0, 40%, 50%)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsl(0, 20%, 50%);"&gt;hsl(0, 20%, 50%)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsl(0, 0%, 50%);"&gt;hsl(0, 0%, 50%)&lt;/h1&gt;
+
+                &lt;p&gt;With HSL colors, less saturation mean less color. 0% is completely gray.&lt;/p&gt;
+
+
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code>
+                </pre>
                 <li>Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white.
                      <ul>
                         <li>The lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light) 100% means full lightness (white).</li>
                     </ul>
                 </li>
+                
+                 <img src="Photos/lightness.JPG" alt="Lightness example">
+                <p>Here is an example:</p>
+                <pre>
+                <code>
+               &lt;!DOCTYPE/&gt;
+                &lt;html&gt;
+                &lt;style&gt;
+
+                    body{
+                        text-align: center;
+                        font-family:sans-serif;
+
+                    }
+
+                &lt;/style&gt;
+                &lt;body&gt;
+                &lt;h1 style="background-color:hsl(0, 100%, 0%);"&gt;hsl(0, 100%, 0%)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsl(0, 100%, 25%);"&gt;hsl(0, 100%, 25%)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsl(0, 100%, 50%);"&gt;hsl(0, 100%, 50%)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsl(0, 100%, 75%);"&gt;hsl(0, 100%, 75%)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsl(0, 100%, 90%);"&gt;hsl(0, 100%, 90%)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsl(0, 100%, 100%);"&gt;hsl(0, 100%, 100%)&lt;/h1&gt;
+
+                &lt;p&gt;With HSL colors, 0% lightness means black, and 100 lightness means white.&lt;/p&gt;
+
+
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code>
+                </pre>
                  <li>Shades of gray are often defined by setting the hue and saturation to 0, and adjust the lightness from 0% to 100% to get darker/lighter shades</li>
-                <h1>EXAMPLE CODE HERE WITH OUTPUT</h1>
+                    <img src="Photos/hslgray.JPG" alt="gray example">
+                <p>Here is an example:</p>
+                <pre>
+                <code>
+              &lt;!DOCTYPE/&gt;
+                &lt;html&gt;
+                &lt;style&gt;
+
+                    body{
+                        text-align: center;
+                        font-family:sans-serif;
+
+                    }
+
+                &lt;/style&gt;
+                &lt;body&gt;
+                &lt;h1 style="background-color:hsl(0, 0%, 0%);"&gt;hsl(0, 0%, 0%)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsl(0, 0%, 24%);"&gt;hsl(0, 0%, 24%)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsl(0, 0%, 47%);"&gt;hsl(0, 0%, 47%)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsl(0, 0%, 71%);"&gt;hsl(0, 0%, 71%)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsl(0, 0%, 94%);"&gt;hsl(0, 0%, 94%)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsl(0, 0%, 100%);"&gt;hsl(0, 0%, 100%)&lt;/h1&gt;
+
+                &lt;p&gt;With HSL colors, shades of gray are made by setting the saturation to 0%, and adjusting the lightness according to how dark/light the gray color should be.&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code>
+                </pre>
                     
                  <h3>RGBA Value</h3>
                 <li>RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.An RGBA color value is specified with: <b>rgba (<i>red, green, blue, alpha</i>)</b>
                 </li>
                 <li> The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all).</li>
-                <h1>EXAMPLE CODE HERE WITH OUTPUT</h1>
+                
+                     <img src="Photos/rgba.JPG" alt="rgba example">
+                <p>Here is an example:</p>
+                <pre>
+                <code>
+              &lt;!DOCTYPE/&gt;
+                &lt;html&gt;
+                &lt;style&gt;
+
+                    body{
+                        text-align: center;
+                        font-family:sans-serif;
+
+                    }
+
+                &lt;/style&gt;
+                &lt;body&gt;
+                &lt;h1 style="background-color:rgba(255, 99, 71, 0);"&gt;rgba(255, 99, 71, 0)&lt;/h1&gt;
+                &lt;h1 style="background-color:rgba(255, 99, 71, 0.2);"&gt;rgba(255, 99, 71, 0.2)&lt;/h1&gt;
+                &lt;h1 style="background-color:rgba(255, 99, 71, 0.4);"&gt;rgba(255, 99, 71, 0.4)&lt;/h1&gt;
+                &lt;h1 style="background-color:rgba(255, 99, 71, 0.6);"&gt;rgba(255, 99, 71, 0.6)&lt;/h1&gt;
+                &lt;h1 style="background-color:rgba(255, 99, 71, 0.8);"&gt;rgba(255, 99, 71, 0.8)&lt;/h1&gt;
+                &lt;h1 style="background-color:rgba(255, 99, 71, 1);"&gt;rgba(255, 99, 71, 1)&lt;/h1&gt;
+
+                &lt;p&gt;You can make transparent colors by using the RGBA color value.&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code>
+                </pre>
                     
                 <h3>HSLA Value</h3>
                 <li>HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.An HSLA color value is specified with:<b>hsla(<i>hue, saturation, lightness, alpha</i>)</b>
                 </li>
                 <li> The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all)</li>
-                <h1>EXAMPLE CODE HERE WITH OUTPUT</h1>
+                   <img src="Photos/hsla.JPG" alt="hsla example">
+                <p>Here is an example:</p>
+                <pre>
+                <code>
+              &lt;!DOCTYPE/&gt;
+                &lt;html&gt;
+                &lt;style&gt;
+
+                    body{
+                        text-align: center;
+                        font-family:sans-serif;
+
+                    }
+
+                &lt;/style&gt;
+                &lt;body&gt;
+                &lt;h1 style="background-color:hsla(9, 100%, 64%, 0);"&gt;hsla(9, 100%, 64%, 0)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsla(9, 100%, 64%, 0.2);"&gt;hsla(9, 100%, 64%, 0.2)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsla(9, 100%, 64%, 0.4);"&gt;hsla(9, 100%, 64%, 0.4)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsla(9, 100%, 64%, 0.6);"&gt;hsla(9, 100%, 64%, 0.6)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsla(9, 100%, 64%, 0.8);"&gt;hsla(9, 100%, 64%, 0.8)&lt;/h1&gt;
+                &lt;h1 style="background-color:hsla(9, 100%, 64%, 1);"&gt;hsla(9, 100%, 64%, 1)&lt;/h1&gt;
+
+                &lt;p&gt;You can make transparent colors by using the HSLA color value.&lt;/p&gt;
+
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code>
+                </pre>
             </ul>
         </ul>
+        
+        <h2>JavaScript</h2>
+
+<ul>
+  <li>Core JavaScript (EcmaScript) Language and API</li>
+      <ul>
+          <li>Developed by Ecma International</li>
+          <li>ECMAScript(first edition, released 1997)</li>
+      </ul>
+    <li>ECMAScript Editions</li>
+       <table>
+  <tr>
+    <th>Year</th>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>1997</td>
+    <td>ECMAScript 1</td>
+    <td>First Edition</td>
+  </tr>
+  <tr>
+    <td>1998</td>
+    <td>ECMAScript 2</td>
+    <td>Editorial changes</td>
+  </tr>
+  <tr>
+    <td>1999</td>
+    <td>ECMAScript 3</td>
+    <td>Added try/catch</td>
+  </tr>
+  <tr>
+    <td>2009</td>
+    <td>ECMAScript 5</td>
+    <td>Added strict mode and JSOn support</td>
+  </tr>
+  <tr>
+    <td>2011</td>
+    <td>ECMAScript 5.1</td>
+    <td>Changes in editorial</td>
+  </tr>
+  <tr>
+    <td>2015</td>
+    <td>ECMAScript 6</td>
+    <td>Added classes and modules</td>
+  </tr>
+  <tr>
+    <td>2016</td>
+    <td>ECMAScript 7</td>
+    <td>Added cexponential operator and Array.prototype.includes</td>
+  </tr>
+</table>
+
+  <li>(Traditional) Browser Object Mode (BOM) API (non-standardized)</li>
+      <ul>
+      <li>It allows the javascript interact to the browser</li>
+      </ul>
+      <ul>
+      <li>Window, Navigator, Screen, Location, History</li>
+      </ul>
+    
+  <li>Document Object Model (DOM) API</li>
+      <ul>
+      <li>It is a API that allows access to the HTML document from within the scripts associated with the web page.</li>
+      <li>A parsed HTML document is represented by DOM TREE, which contains nodes.</li>
+      <li>It is accessed via DOCUMENT object property of the global window object.</li>
+      </ul>
+          <ul>
+          <li>Node, Document, Element, Text, Attribute, DocumentType, Comment</li>
+          <li>Event</li>
+              <ul>
+              <li> It is used to provide contextual information about an event to the handler processing the event.</li>
+              </ul>
+          <li>EventTarget</li>
+              <ul>
+              <li>Represents an event target, and is a subset of the EventTarget interface defined in the DOM Level 3 Event model. </li>
+              </ul>
+          <li>EventListener</li>
+              <ul>
+              <li>Are defined which are invoked when a given event happens on a given object.</li>
+              </ul>
+          <li>CSSStyleSheet, CSSRule</li>
+          </ul>
+    
+  <li>Miscellaneous JavaScript Web API’s</li>
+      <ul>
+      <li>Geolocation, IndexedDB, Local Storage, Push Notifications, Service Workers, Web Sockets, Web Workers, XMLHTTPRequest (AJAX), etc.</li>
+      <li>Most API’s accessed</li>
+          <ul>
+              <li>Window.navigator</li>
+          </ul>
+                <ul>
+                 <li>It is an object that can be written without the window prefix.</li>
+                </ul>  
+                    <li>Some examples:</li>
+                        <ul>
+                         <li>navigator.appName</li>
+                         <li>navigator.appCodeName</li>
+                         <li>navigator.platForm</li>
+                        </ul>
+     </ul>
+  <li>Different types of Linking the JavaScript to the HTML</li>
+        <ul>
+            <li>Link</li>
+                <ul>
+                <li>It is a set of data elements or nodes.</li>
+                <li>It can be measured as a high level standpoint where each node has atleast one pointer that represernts the nodes.</li>
+                </ul>
+            <li>External</li>
+                <ul>
+                <li>It uses the "src" attribute.</li>
+                <li>Used when a code is being used in multiple web pages.</li>
+                </ul>
+            <li>Embedded (a.k.a. Internal)</li>
+                <ul>
+                <li>It uses the "script" attribute.</li>
+                <li>It points to a external script and used to define a user side script.</li>
+                </ul>
+        </ul>
+    <li>Attributes</li>
+    <ul>
+    <li>Defer</li>
+        <ul>
+            <li>It downloads the script but it will parse the html.</li>
+            <li>It is only used for external scripts.</li>
+            <li>It tells whether a page is being parsed and if the script can be executed.</li>
+        </ul>
+    <li>Async</li>
+        <ul>
+            <li>The CSS and HTML are in parsing.</li>
+            <li>It is only used for external scripts.</li>
+            <li>It is a boolean attribute</li>
+            <li>It tells that the script is being executed asychronously as long at it is available.</li>
+        </ul>
+    </ul>
+        
+    <h4>Functionalities</h4>
+        <li>Relieve reference to nodes (or node collections) in the DOM</li>
+            <ul>
+            <li>getElementByID()</li>
+                <ul>
+                <li>It returns the ID attribute with its specified value.</li>
+                <li>It is used to manipulate and get information froma document.</li>
+                <li>It returns a null if there is no elements indicated in the ID attribute.</li>
+                </ul>
+            <li>GetElementBytargetName()</li> 
+                <ul>
+                <li>It returns a NodeList Object that contains a collection of elements in a document specified in a name.</li>
+                </ul>
+            <li>getElementByClassName()</li> 
+                <ul>
+                <li>It returns a NodeList Object that contains a collection of elements in a document specified in a class.</li>
+                </ul>
+            <li>getElementByName</li>
+                <ul>
+                <li>It returns a NodeList Object that contains a collection of elements in a document specified with name(value of the name attribute).</li>
+                </ul>
+            <li>querySelector()</li>
+                <ul>
+                <li>It returns the first element that have the same specified selector in a document.</li>
+                </ul>
+            <li>querySelectorAll()</li>
+                <ul>
+                <li>It returns the all element that have the same specified selector in a document.</li>
+                </ul>
+        </ul>
+        <li>Travers the DOM tree (from a give Node)</li>
+            <ul>
+            <li>parentNode</li>
+                <ul>
+                <li>It is a node object that returns the parent mode of a particular node.</li>
+                </ul>
+            <li>parentElement</li>
+                <ul>
+                <li>It  returns the parent element of a particular element.</li>
+                </ul>
+            <li>childNode</li>
+                <ul>
+                <li>It returns a node of a child's node as a Nodelist object.</li>
+                <li>It is sorted according to its appeareance within the sourcecode.</li>
+                </ul>
+            <li>childrenElement</li>
+                <ul>
+                <li>It returns a collection of elements of a child's element as a HTMLCollection object.</li>
+                <li>It is sorted according to its appeareance within the sourcecode.</li>
+                </ul>
+            <li>firstChild</li> 
+                <ul>
+                <li>It returns the first child node of a specific node as a Node object.</li>
+                </ul>
+            <li>lastChild</li> 
+                <ul>
+                <li>It returns the last child node of a specific node as a Node object.</li>
+                </ul>
+            <li>nextSibling</li>
+                <ul>
+                <li>It returns the next specified node within the same tree level and returned as a Node object.</li>
+                </ul>
+            <li>previousElementSibling</li>
+                <ul>
+                <li>It returns the previous specified node within the same tree level and returned as a Node object.</li>
+                </ul>
+        </ul>
+        <li>Construct/Copy Nodes</li>
+            <ul>
+            <li>createAttribute</li>
+                <ul>
+                <li>It returns as a Attr object and creates an attribute with a specific name.</li>
+                </ul>
+            <li>createTextNode</li> 
+                <ul>
+                <li>It creates a text node with a specific text.</li>
+                </ul>
+            <li>createElement90</li>
+            <li>cloneNode()</li> 
+                <ul>
+                <li>It creates another copy of a node and clones all attributes with their corresponding values then returns the clone.</li>
+                </ul>
+            <li>importNode()</li>
+                <ul>
+                <li>It imports a specific node from another document and it can be imported to all kinds of nodes.</li>
+                </ul>
+            </ul>
+        <li>Manipulate the DOM TREE</li>
+            <ul>
+            <li>appendChild()</li>
+                <ul>
+                <li>It appends a node as a last child of the node.</li>
+                </ul>
+            <li>insertBefore()</li>
+                <ul>
+                <li>It inserts a node as a child before an existing child that is being specified.</li>
+                </ul>
+            <li>replaceChild()</li> 
+                <ul>
+                <li>It replace a child node into a new node where the new node can be an existing node or a new node in a document.</li>
+                </ul>
+            <li>removeChild()</li>
+                <ul>
+                <li>It removes a child nodenode of a specified element and returns as a Node object or a null if it does not exist.</li>
+                </ul>
+            <li>adoptNode()</li>
+                <ul>
+                <li>It adopts a node in a document and that node can be all kinds of node..</li>
+                </ul>
+        </ul>
+        <li>Miscellaneous attributes and methods</li>
+            <ul>
+            <li>nodeType</li>
+                <ul>
+                <li>It returns a number of a specific node and returns a node type.</li>
+                </ul>
+            <li>nodeName</li> 
+                <ul>
+                <li>It returns tha name of a specific node.</li>
+                <li>If the node is a element, the node will return a tag name.</li>
+                <li>If the node is a attribute, the node will return the name of the attribute.</li>
+                </ul>
+            <li>nodeValue</li>
+                <ul>
+                <li>It sets the node value of a specific node.</li>
+                <li>It will return to null if the node sets a element node.</li>
+                </ul>
+            </ul>
+    <li>Interface of a Node</li>
+    <ul>
+        <li>Text Node</li>
+            <ul>
+            <li>It creates a text node containing a specific text.</li>
+            <li>It uses the createElement() method to create an element node.</li>
+                <li>var t = document.createTextNode("Hello World");</li>
+            </ul>
+        <li>Attribute</li>
+            <ul>
+            <li>setAttribute</li>
+                <ul>
+                    <li>It adds a attribute into an element and provides the specified value.</li>
+                <li>The value will be changed if the specified value already exists.</li>
+                </ul>
+            <li>getAttribute</li>
+                <ul>
+                <li>It returns the corresponding value of the attribute with its corresponding name of the element.</li>
+                </ul>
+            </ul>
+    </ul>    
+</ul> 
     </body>
 </html>
