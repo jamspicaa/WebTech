@@ -1,0 +1,352 @@
+Commits on Apr 9, 2018
+Add files via upload
+
+@jamspicaa
+jamspicaa committed 15 hours ago
+Verified   
+Prelims Webpage modified -Jam
+
+@jamspicaa
+jamspicaa committed 15 hours ago
+Verified   
+Add files via upload
+
+@2163797
+2163797 committed 16 hours ago
+Verified   
+JavaScript file -Jam
+
+@jamspicaa
+jamspicaa committed 16 hours ago
+Verified   
+2 html files of teh website -Jam
+
+@jamspicaa
+jamspicaa committed 16 hours ago
+Verified   
+Updated CSS of main html - Jam
+
+@jamspicaa
+jamspicaa committed 16 hours ago
+Verified   
+fonts used in the website -Jam
+
+@jamspicaa
+jamspicaa committed 16 hours ago
+Verified   
+All pictures used in the website -JAM
+
+@jamspicaa
+jamspicaa committed 16 hours ago
+Verified   
+Add files via upload
+
+@2163797
+2163797 committed 16 hours ago
+Verified   
+adding other pics
+
+@carylmarie
+carylmarie committed 17 hours ago
+
+
+
+Commits on Apr 8, 2018
+All photos used -Jam
+
+@jamspicaa
+jamspicaa committed 17 hours ago
+Verified   
+Fonts -Jam
+
+@jamspicaa
+jamspicaa committed 17 hours ago
+Verified   
+Landing Page and Stylesheet -Jam
+
+@jamspicaa
+jamspicaa committed 17 hours ago
+Verified   
+adding the html for midterms notes
+
+@carylmarie
+carylmarie committed 20 hours ago
+ 
+Add files via upload  …
+
+@sampaulpogi
+sampaulpogi committed a day ago
+Verified   
+April 06 Notes
+
+@jamspicaa
+jamspicaa committed a day ago
+Verified   
+April 3 Notes Continuation
+
+@jamspicaa
+jamspicaa committed a day ago
+Verified   
+April 03 Notes
+
+@jamspicaa
+jamspicaa committed 2 days ago
+Verified   
+Commits on Apr 1, 2018
+Add files via upload
+
+@2163797
+2163797 committed 8 days ago
+Verified   
+Commits on Mar 26, 2018
+CSS Preprocessor, etc. March 23 Notes
+
+@jamspicaa
+jamspicaa committed 14 days ago
+Verified   
+CSS Rules March 13 Notes
+
+@jamspicaa
+jamspicaa committed 14 days ago
+Verified   
+Add files via upload
+
+@2163797
+2163797 committed 14 days ago
+Verified   
+Add files via upload
+
+@2163797
+2163797 committed 14 days ago
+Verified   
+Commits on Mar 25, 2018
+Add files via upload
+
+@sampaulpogi
+sampaulpogi committed 15 days ago
+Verified   
+Add files via upload
+
+@sampaulpogi
+sampaulpogi committed 15 days ago
+Verified   
+JavaScript Notes March 24
+
+@jamspicaa
+jamspicaa committed 15 days ago
+Verified   
+Commits on Mar 18, 2018
+fixed the files
+
+@carylmarie
+carylmarie committed 22 days ago
+ 
+Merge branch 'master' of https://github.com/jamspicaa/WebTech
+
+@carylmarie
+carylmarie committed 22 days ago
+ 
+Fixed the content of the folders  …
+
+@carylmarie
+carylmarie committed 22 days ago
+ 
+Commits on Mar 16, 2018
+MIDTERM FOLDER
+
+@jamspicaa
+jamspicaa committed 24 days ago
+Verified   
+
+Commits on Feb 26, 2018
+update
+
+@carylmarie
+carylmarie committed on Feb 26
+ 
+update
+
+@carylmarie
+carylmarie committed on Feb 26
+ 
+sample for font-face
+
+@carylmarie
+carylmarie committed on Feb 26
+ 
+Add files via upload
+
+@jamspicaa
+jamspicaa committed on Feb 26
+Verified   
+Latest Website
+
+@jamspicaa
+jamspicaa committed on Feb 26
+Verified   
+Commits on Feb 25, 2018
+Add files via upload
+
+@2163797
+2163797 committed on Feb 25
+Verified   
+Add files via upload
+
+@2163797
+2163797 committed on Feb 25
+Verified   
+Adding prelims.html file  …
+
+@carylmarie
+carylmarie committed on Feb 25
+ 
+Commits on Feb 24, 2018
+moved the notes I added  …
+
+@carylmarie
+carylmarie committed on Feb 24
+ 
+added a notes
+
+@carylmarie
+carylmarie committed on Feb 24
+ 
+READ ME
+
+@jamspicaa
+jamspicaa committed on Feb 24
+Verified   
+Add files via upload
+
+@2163797
+2163797 committed on Feb 24
+Verified   
+Add files via upload
+
+@2163797
+2163797 committed on Feb 24
+Verified   
+Updated index.html and style.css
+
+@jamspicaa
+jamspicaa committed on Feb 24
+Verified   
+Add files via upload
+
+@2163797
+2163797 committed on Feb 24
+Verified   
+Moved Images folder to HTML folder.
+
+@2161757
+2161757 committed on Feb 24
+ 
+Organized the files.
+
+@2161757
+2161757 committed on Feb 24
+ 
+Merge branch 'master' of https://github.com/jamspicaa/WebTech  …
+
+@2161757
+2161757 committed on Feb 24
+ 
+Organized the files.
+
+@2161757
+2161757 committed on Feb 24
+ 
+Add files via upload
+
+@2163797
+2163797 committed on Feb 24
+Verified   
+Merge pull request #1 from jamspicaa/HTML  …
+
+@jamspicaa
+jamspicaa committed on Feb 24
+Verified   
+Commits on Feb 23, 2018
+Add files via upload
+
+@carylmarie
+carylmarie committed on Feb 23
+Verified   
+Merge branch 'master' of https://github.com/jamspicaa/WebTech
+
+@carylmarie
+carylmarie committed on Feb 23
+ 
+adding a picture for the html
+
+@carylmarie
+carylmarie committed on Feb 23
+ 
+Commits on Feb 22, 2018
+Add files via upload
+
+@sampaulpogi
+sampaulpogi committed on Feb 22
+Verified   
+Commits on Feb 21, 2018
+Add files via upload
+
+@sampaulpogi
+sampaulpogi committed on Feb 21
+Verified   
+Commits on Feb 20, 2018
+Add files via upload
+
+@jamspicaa
+jamspicaa committed on Feb 20
+Verified   
+Add files via upload
+
+@jamspicaa
+jamspicaa committed on Feb 20
+Verified   
+Commits on Feb 16, 2018
+Add files via upload
+
+@jamspicaa
+jamspicaa committed on Feb 16
+Verified   
+Commits on Feb 15, 2018
+Add files via upload
+
+@jamspicaa
+jamspicaa committed on Feb 15
+Verified   
+Commits on Feb 11, 2018
+Add files via upload
+
+@jamspicaa
+jamspicaa committed on Feb 11
+Verified   
+Research about the topic  …
+
+@carylmarie
+carylmarie committed on Feb 11
+ 
+Add files via upload
+
+@sampaulpogi
+sampaulpogi committed on Feb 11
+Verified   
+Commits on Feb 9, 2018
+Update README.md
+
+@jamspicaa
+jamspicaa committed on Feb 9
+Verified   
+Add files via upload
+
+@jamspicaa
+jamspicaa committed on Feb 9
+Verified   
+
+Commits on Feb 10, 2018
+first commit
+
+JamJam
+Jam authored and Jam committed on Feb 10
