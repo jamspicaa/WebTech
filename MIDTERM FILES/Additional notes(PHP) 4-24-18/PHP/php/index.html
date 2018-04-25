@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Server-Side Web Scripting: PHP</title>
+    </head>
+    <body>
+        <h1>PHP Demo</h1>
+        <hr>
+        
+        <h2>Simple Text-Based Response (HTML)</h2>
+        <p><a href="hellophp.php" target="_blank">Hello, PHP!</a></p>
+        <hr>
+        
+        <h2>Binary Response (Image)</h2>
+        <p><a href="getimage.php?filename=superman" target="_blank">Superman</a></p>
+        <p><a href="getimage.php?filename=wonderwoman" target="_blank">Wonder Woman</a></p>
+        <hr>
+        
+        <h2>Handling Form Data Submission (GET)</h2>
+        <form action="greetme.php" method="GET" target="_blank">
+            <p>What is your name?<br><input type="text" name="yourname"></p>
+            <p>What is your favorite color?<br><input type="text" name="favcolor"></p>
+            <p><input type="submit" value="Greet Me!"></p>
+        </form>
+        <hr>
+        
+        <h2>Handling Form Data Submission (POST)</h2>
+        <form action="processorder.php" method="POST" target="_blank">
+            <p><b>Sizes:</b>
+                <input type="checkbox" name="size[]" value="Small"> Small
+                <input type="checkbox" name="size[]" value="Medium"> Medium
+                <input type="checkbox" name="size[]" value="Large"> Large
+            </p>
+            
+            <p><b>Colors:</b>
+                <input type="checkbox" name="color[]" value="Red"> Red
+                <input type="checkbox" name="color[]" value="Green"> Green
+                <input type="checkbox" name="color[]" value="Blue"> Blue
+                <input type="checkbox" name="color[]" value="Yellow"> Yellow
+                <input type="checkbox" name="color[]" value="Black"> Black
+                <input type="checkbox" name="color[]" value="White"> White
+            </p>
+            
+            <p>Customer Name: <input type="text" name="custname"></p>
+            <p><input type="submit" value="Process Order"></p>
+        </form>
+        <hr>
+        
+        <h2>Handling File Uploads</h2>
+        <form action="uploadfile.php" method="POST" enctype="multipart/form-data" target="_blank">
+            <p>Your Name: <input type="text" name="yourname"></p>
+            <p>File to Upload: <input type="file" name="file"></p>
+            <p><input type="submit" value="Upload File"></p>
+        </form>
+        <hr>
+
+        <h2>Dynamic Content (with Database Access)</h2>
+        <form action="getproducts.php" method="GET" target="_blank">
+            <input type="hidden" name="view" value="html">
+            <p>Product Category: <input type="text" name="cat"></p>
+            <p><input type="submit" value="Show Products"></p>
+        </form>
+        <hr>
+        
+        <h2>Dynamic Content via AJAX (with Database Access)</h2>
+        <p>Product Category: <input type="text" id="cat"></p>
+        <button onclick="getProducts()">Show Products</button>
+        <div id="productlist" style='font-family: sans-serif'></div>
+        <hr>
+        
+        <script>
+            function getProducts() {
+                var xhr = new XMLHttpRequest();
+                var cat = document.querySelector('#cat').value;
+                var url = `getproducts.php?view=json&cat=${cat}`;
+                xhr.open('GET', url);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        showProducts(cat, xhr.responseText);
+                    }
+                }
+                xhr.send();
+            }
+            
+            function showProducts(cat, json) {
+                var products = JSON.parse(json);
+                var div = document.querySelector('#productlist');
+                
+                var content = '<h1>Product List</h1>';
+                content += `<h2>Category: ${cat}</h2>`;
+                
+                if (products.length == 0) {
+                    content += '<h2>No available products.</h2>';
+                } else {
+                    content += `
+                        <table style='border-collapse: collapse; border: 1px solid black'>
+                            <thead style='color: yellow; background-color: black'>
+                                <tr>
+                                    <th>ProdID</th>
+                                    <th>Description</th>
+                                    <th>Price</th>
+                                    <th>Image</th>
+                                </tr>
+                            </thead>
+                            <tbody style='border: inherit'>`;
+                    
+                    let style = "style = 'border: inherit; padding: 5px 10px'";
+                    products.forEach(product => {
+                       content += `
+                            <tr style='border: inherit'>
+                                <td ${style}>${product.prodid}</td>
+                                <td ${style}>${product.description}</td>
+                                <td ${style}>${Number(product.price).toFixed(2)}</td>
+                                <td ${style}><img style='width: 50px' alt='${product.description}' src='${product.image}'></td>
+                            </tr>`; 
+                    });
+                    
+                    content += `
+                            </tbody>
+                        </table>`;
+                }
+                
+                div.innerHTML = content;
+            }
+        </script>
+    </body>
+</html>
