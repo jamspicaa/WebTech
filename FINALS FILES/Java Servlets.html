@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+    <h1> Server-Side Programming</h1>
+    <h1> Java Servlets</h1>
+    <ul>
+        <li><p>Java objects that are intended to play the role of server components in client-server communications.</p></li>
+        <li><p>The Java servlets are server-side programs, which is running inside a web server, that handle clients' requests and return a customized or dynamic response for each request.</p></li>
+        <li><p>Using Servlets, you can collect input from users through web page forms, present records from a database or another source, and create web pages dynamically.</p></li>
+        <li><p>Part of the Java EE specification(See <a href="https://docs.oracle.com/javaee/7/api/javax/servlet/package-summary.html" target="_blank">Java Servlet API </a>for more details)</p></li>
+        <h2>servlet life cycle</h2>
+        <ul>
+            <li><h3>Instantiation</h3>
+                <ul>
+                    <li> This is the first phase of the Servlet life cycle  and represents the creation and initialization of resources the Servlet may need to service requests.</li>
+                    <li>All Servlets must implement the javax.servlet.Servlet interface. 
+                        <ul>
+                            <li>This interface defines the init() method to match the initialization phase of a Servlet life cycle. When a container loads a Servlet, it invokes the init() method before servicing any requests.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><h3>Service</h3>
+                <ul>
+                    <li>It represents all interactions with requests until the Servlet is destroyed. </li>
+                    <li>The service() method of a Servlet is invoked once per a request and is responsible for generating the response to that request. </li>
+                    <li>The Servlet specification defines the service() method to take two parameters: a javax.servlet.ServletRequest and a javax.servlet.ServletResponse object.
+                        <ul> 
+                            <li>These two objects represent a client's request for the dynamic resource and the Servlet's response to the client. </li>
+                            <li>By default a Servlet is multi-threaded, meaning that typically only one instance of a Servlet1 is loaded by a JSP container at any given time. </li>
+                            <li>Initialization is done once, and each request after that is handled concurrently2 by threads executing the Servlet's service() method.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><h3>Destruction</h3>
+                <ul>
+                    <li>It represents when a Servlet is being removed from use by a container. </li>
+                    <li>The destroy() method to correspond to the destruction life cycle phase. </li>
+                    <li>Each time a Servlet is about to be removed from use, a container calls the destroy() method, allowing the Servlet to gracefully terminate and tidy up any resources it might have created.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>(n.d.). InformIT: The Trusted Technology Source for IT Pros and Developers. Servlet Life Cycle | Java Servlets | InformIT. Retrieved from http://www.informit.com/articles/article.aspx?p=170963&seqNum=2</p>
+        
+    </ul>
+</html>
