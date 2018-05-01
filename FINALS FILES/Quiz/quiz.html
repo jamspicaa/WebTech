@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Quiz</title>	
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+
+	<div id="page-wrap"><br>
+        <button class="button" value="">Back</button>
+        <button class="button" value="">Home</button>
+		<h1>This quiz will help you to test your knowledge based on the previous topics</h1>
+            <h3>Please select a Topic</h3>
+                <form name="form1" style="display: inline-block; text-align: center;">
+                    <div class="styled-select" >
+                        <select class="form-control" id = "opts" onChange="showForm()" name="quiztopic">
+                                <option disabled selected>Click here!</option>
+                                <option value="1">JavaScript</option>
+                                <option value="2">Java Servlets</option>
+                                <option value="3">PHP</option>
+                        </select>
+                    </div>
+                </form>
+
+    
+    <div id = "f1" style="display:none">
+		<form action="" method="post" id="quiz"><br><br>
+            <h2>Welcome to JavaScript! Good luck!</h2><br>
+            <ol>
+                <li>
+                    <h3>Who developed JavaScript?</h3>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+                        <label for="question-1-answers-A">A) Tim Berners Lee</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+                        <label for="question-1-answers-B">B) Ecma International</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+                        <label for="question-1-answers-C">C) Steve Jobs</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+                        <label for="question-1-answers-D">D) Hakon Wium Lie</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>Year that ECMA Script released its first edition?</h3>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
+                        <label for="question-2-answers-A">A) 2001</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
+                        <label for="question-2-answers-B">B) 1996</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-C" value="C" />
+                        <label for="question-2-answers-C">C) 1997</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-D" value="D" />
+                        <label for="question-2-answers-D">D) 2005</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>BOM stands for?</h3>
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" />
+                        <label for="question-3-answers-A">A) Browser Objective Model</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" />
+                        <label for="question-3-answers-B">B) Browser Object Mode</label>
+                    </div>                  
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-C" value="C" />
+                        <label for="question-3-answers-C">C) Browser Object Master</label>
+                    </div>              
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-D" value="D" />
+                        <label for="question-3-answers-D">D) Browser Organized Model</label>
+                    </div>          
+                </li>
+                <li>
+                    <h3>DOM stands for?</h3>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" />
+                        <label for="question-4-answers-A">A) Document Object Mode</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B" />
+                        <label for="question-4-answers-B">B) Document Object Model</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-C" value="C" />
+                        <label for="question-4-answers-C">C) Document Objective Model</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-D" value="D" />
+                        <label for="question-4-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>It is used to provide contextual information about an event to the handler processing the event.</h3>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) Event</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) EventTarget</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) EventListener</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>Represents an event target, and is a subset of the EventTarget interface defined in the DOM Level 3 Event model.</h3>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) Event</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) EventTarget</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) EventListener</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>Are defined which are invoked when a given event happens on a given object.</h3>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) Event</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) EventTarget</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) EventListener</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>It is a set of data elements or nodes.</h3>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) Link</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) External</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) Embedded</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>It uses the "src" attribute.</h3>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) Link</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) External</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) Embedded</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>It points to a external script and used to define a user side script.</h3>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) Link</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) External</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) Embedded</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+            </ol>
+            <button class="button" value="">Submit</button>
+		</form><br>
+    </div>
+        
+        
+    <div id = "f2" style="display:none">
+		<form action="" method="post" id="quiz"><br><br>
+            <h2>Welcome to Java Servlets! Good luck!</h2><br>
+            <ol>
+                <li>
+                    <h3>Java Servlets is a?</h3>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+                        <label for="question-1-answers-A">A) Java Extension</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+                        <label for="question-1-answers-B">B) Java Program</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+                        <label for="question-1-answers-C">C) Java Frameworks</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+                        <label for="question-1-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>The Servlet1 was created by?</h3>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
+                        <label for="question-2-answers-A">A) Pavni Diwanji</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
+                        <label for="question-2-answers-B">B) James Gosling</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-C" value="C" />
+                        <label for="question-2-answers-C">C) Ryan Cooper</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-D" value="D" />
+                        <label for="question-2-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>Where was the creator of Servlet worked?</h3>
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" />
+                        <label for="question-3-answers-A">A) Sun Microsystems</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" />
+                        <label for="question-3-answers-B">B) Microsoft</label>
+                    </div>                  
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-C" value="C" />
+                        <label for="question-3-answers-C">C) Apple</label>
+                    </div>              
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-D" value="D" />
+                        <label for="question-3-answers-D">D) None of the Above</label>
+                    </div>          
+                </li>
+                <li>
+                    <h3>Who was the GlassFish lead?</h3>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" />
+                        <label for="question-4-answers-A">A) Jim Driscoll</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B" />
+                        <label for="question-4-answers-B">B) Peter Parker</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-C" value="C" />
+                        <label for="question-4-answers-C">C) James Gosling</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-D" value="D" />
+                        <label for="question-4-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>Java Servlets are?</h3>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) Client-side programs</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) Server-side programs</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) Both A and B</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>This is the first phase of the Servlet life cycle and represents the creation 
+                        and initialization of resources the Servlet may need to service requests.</h3>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) Instantiation</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) Service</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) Destruction</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>It represents all interactions with requests until the Servlet is destroyed.</h3>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) Instantiation</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) Service</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) Destruction</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>It represents when a Servlet is being removed from use by a container.</h3>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) Instantiation</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) Service</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) Destruction</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>Java objects that are intended to play the role of server components in client-server communications.</h3>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) Java Servlets</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) Java Sevrlets</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) Java Servlots</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) Java Services</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>The Java Servlets is commonly implemented applications hosted on what?</h3>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) Web browsers</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) Web servers</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) Web clients</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+            </ol>
+            <button class="button" value="">Submit</button>
+		</form><br>
+    </div>
+
+        
+    <div id = "f3" style="display:none">
+		<form action="" method="post" id="quiz"><br><br>
+            <h2>Welcome to PHP! Good luck!</h2><br>
+            <ol>
+                <li>
+                    <h3>PHP was developed by?</h3>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+                        <label for="question-1-answers-A">A) Micro Technologies</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+                        <label for="question-1-answers-B">B) Zend Technologies</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+                        <label for="question-1-answers-C">C) Send Technologies</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+                        <label for="question-1-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>PHP is a ________ language designed for web development.</h3>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
+                        <label for="question-2-answers-A">A) Server-side scripting</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
+                        <label for="question-2-answers-B">B) Client-side scripting</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-C" value="C" />
+                        <label for="question-2-answers-C">C) Server-Client-side scripting</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-D" value="D" />
+                        <label for="question-2-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>PHP was originally created by?</h3>
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" />
+                        <label for="question-3-answers-A">A) Rasmus Lerdorf</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" />
+                        <label for="question-3-answers-B">B) James Gosling</label>
+                    </div>                  
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-C" value="C" />
+                        <label for="question-3-answers-C">C) Jon Snow</label>
+                    </div>              
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-D" value="D" />
+                        <label for="question-3-answers-D">D) None of the Above</label>
+                    </div>          
+                </li>
+                <li>
+                    <h3>PHP originally stood for?</h3>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" />
+                        <label for="question-4-answers-A">A) Private Home Page</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B" />
+                        <label for="question-4-answers-B">B) Public Home Page</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-C" value="C" />
+                        <label for="question-4-answers-C">C) Personal Home Page</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-D" value="D" />
+                        <label for="question-4-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>What is the correct PHP tags?</h3>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) <?php ?></label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) <!php !></label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) Either A or B</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>PHP was first appeared  at the year?</h3>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) 1992</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) 1995</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) 1998</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) 2001</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>PHP runs on various platforms like</h3>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) Windows</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) Linux</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) Unix</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) All of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>PHP files can contain</h3>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) HTML</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) CSS</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) JavaScript</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) All of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>PHP files have extension of</h3>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) .phph</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) .php</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) .ph</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>What is the latest version of PHP as of today?</h3>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) PHP 8</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) PHP 7</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) PHP 6</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
+                        <label for="question-5-answers-D">D) None of the Above</label>
+                    </div>
+                </li>
+            </ol>
+            <button class="button" value="">Submit</button>
+		</form><br>
+    </div>
+        
+    </div>
+
+</body>
+<script type="text/javascript">
+    function showForm() {
+        var selopt = document.getElementById("opts").value;
+        if (selopt == 1) {
+            document.getElementById("f1").style.display = "block";
+            document.getElementById("f2").style.display = "none";
+        }
+        if (selopt == 2) {
+            document.getElementById("f2").style.display = "block";
+            document.getElementById("f1").style.display = "none";
+        }
+        if (selopt == 3) {
+            document.getElementById("f3").style.display = "block";
+            document.getElementById("f2").style.display = "none";
+            document.getElementById("f1").style.display = "none";
+        }
+    }
+</script>
+</html>
