@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+<h2>Session Handling in Java Servlet</h2>
+
+<ul>
+  <li>What is a Session?</li>
+      <ul>
+          <li>Session is the communication between the client and the server that is compose of multiple requests and responses between client and server.</li>
+          <li>Session is being maitained if some information about the session is being passed between the server and client  everytime that there is a responses and requests that is happening. </li>
+		  <li>Ways to provide an identifier</li>
+              <ul>
+              <li> User Authentication</li>
+				  <ul>
+					  <li>User can give authentication credentials in order to pass authentication information between the server and client.</li>
+				  </ul>
+			  <li> HTML Hidden Field</li>
+				  <ul>
+					  <li>We can make unique hidden field in the HTML so users can start to navigate, we can set its value unique to the user and keep track of the session.</li>
+				  </ul>
+			  <li> URL Rewriting</li>
+				  <ul>
+					  <li>We can attach a session identifier parameter in every request and response to keep track of the session. </li>
+				  </ul>
+			  <li> Cookies</li>
+				  <ul>
+					  <li>Cookies are sent by the server with response header and it is being stored in the browser sookies. </li>
+					  <li>Everytime a  client create requests, it adds the cookie to the request header and we can utilize it to keep track of the session.</li>
+				  </ul>
+			  <li> Session Management API</li>
+				  <ul>
+					  <li>It is built with the other methds for session tracking.</li>
+				  </ul>
+              </ul>
+      </ul>
+
+  <li>Session Handling in Java - Cookies</li>
+      <ul>
+      <li>It is used to personalize responses based on the users choice or to keeo in track in the session.</li>
+      </ul>
+    
+  <li>Session Handling in Java Servlet - HTTPSession</li>
+      <ul>
+      <li>Servlet API gives Session management through the use of  HttpSession interface.</li>
+      <li>HttpSession allows us to set objects as attributes that can be retrieved in future requests.</li>
+	  <li>Ways to provide an identifier</li>
+            <ul>
+              <li>HttpSession getSession()</li>
+				  <ul>
+					  <li>It returns a HTTPSession Object.</li>
+					  <li>It  returns a session object that is being attached with a request.</li>
+				  </ul>
+		  </ul><ul>
+              <li>HttpSession getSession(boolean flag)</li>
+				  <ul>
+					  <li>It returns a HTTPSession Object if a request contains a session otherwise it returns null.</li>
+					  <li>Methods of HTTPSession:</li>
+					  <ul>
+						  <li> String getId()</li>
+						  <ul>
+							  <li>it returns a string containing the unique identifier assigned to this session.</li>
+						  </ul>
+						  <li>Object getAttribute(String name)</li>
+						  <ul>
+							  <li>it returns an object bound with the specified name in thie session, or null if no object is bound under the name.</li>
+							  <li>Methods to work with Session attributes</li>
+							  <ul>
+								  <li>getAttributeNames()</li>
+								  <li>removeAttribute(String name)</li> <li>setAttribute(String name, Object value)</li>
+							  </ul>
+							  </ul>
+							  <li>long getCreationTime() </li>
+						  		<ul>
+							  		<li>it returns the time when this session was created which was January 1, 1970.</li>
+									<li>We can get last accessed time with getLastAccessedTime() method.</li>
+							  	</ul>
+							  <li>setMaxInactiveInterval(int interval)</li>
+									<ul>
+										<li>it identifies the time, in seconds of  client's requests before the servlet container will invalidate this session.</li>
+										<li>We can get session timeout value using the method getMaxInactiveInterval().</li> 
+									</ul>
+						  	<li>ServletContext getServletContext()</li>
+									<ul>
+										<li>it returns the ServletContext object for the application.</li> 
+									</ul>
+						  	<li>boolean isNew() </li>
+									<ul>
+										<li>it  returns true if the client does not yet know about the session or if the client chooses not to join the session.</li> 
+									</ul>
+						  	<li>void invalidate()</li>
+									<ul>
+										<li>it invalidates a session then unbinds any objects bound to it.</li> 
+									</ul>
+					  </ul>
+				  </ul>
+		  </ul>
+	  </ul>
+
+    
+  <li>Session Handling in Java Servlet - URL Rewriting</li>
+      <ul>
+      <li>We can encode URL with HttpServletResponse encodeURL() method and if we have to redirect the request to another resource and we want to provide session information, we can use encodeRedirectURL() method.</li>
+	</ul>
+
+	</ul>
+	
+<h2>Session Handling in PHP</h2>
+	<ul>
+	<li>PHP is one of the widely used Server side scripting language </li>
+	<li>Session Handling supports in PHP that consists of a way to preserve specific data across subsequent accesses.
+	<li>List of PHP Functions:</li>
+		<ul>
+			<li>session_start()</li>
+			<ul>
+				<li>It starts new or resumes an existing session.</li>
+			</ul>
+			<li>session_isset()</li>
+			<li>session_unset()</li>
+			<ul>
+				<li>It sets all session variables to free.</li>
+			</ul>
+			<li>session_destroy()</li>
+			<ul>
+				<li>It destroys all registered data to a session.</li>
+			</ul>
+		</ul>
+	</ul>
+      
+	
+</body>
+</html>
