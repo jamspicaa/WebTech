@@ -40,55 +40,77 @@
                         <h1>Java Servlets</h1>
                     </header>
                             <article>
-                                <h1> Server-Side Programming</h1>
+                                <h2> Server-Side Programming</h2>
+                                <br>
                                 <h1> Java Servlets</h1>
-                                <ul>
-        <li><p>Java objects that are intended to play the role of server components in client-server communications.</p></li>
-        <li><p>The Java servlets are server-side programs, which is running inside a web server, that handle clients' requests and return a customized or dynamic response for each request.</p></li>
-        <li><p>Using Servlets, you can collect input from users through web page forms, present records from a database or another source, and create web pages dynamically.</p></li>
-        <li><p>Part of the Java EE specification(See <a href="https://docs.oracle.com/javaee/7/api/javax/servlet/package-summary.html" target="_blank">Java Servlet API </a>for more details)</p></li>
-        <h2>servlet life cycle</h2>
+                                
+            <p>&emsp;-Java objects that are intended to play the role of server components in client-server communications.</p>
+            <p>&emsp;-The Java servlets are server-side programs, which is running inside a web server, that handle clients' requests and return a customized or dynamic response for each request.</p>
+            <p>&emsp;-Using Servlets, you can collect input from users through web page forms, present records from a database or another source, and create web pages dynamically.</p>
+            <p>&emsp;-Part of the Java EE specification(See <a href="https://docs.oracle.com/javaee/7/api/javax/servlet/package-summary.html" target="_blank">Java Servlet API </a>for more details)</p>
+            <br>
+            <br>
+        <h1>servlet life cycle</h1>
         <ul>
             <li><h3>Instantiation</h3>
-                <ul>
-                    <li> This is the first phase of the Servlet life cycle  and represents the creation and initialization of resources the Servlet may need to service requests.</li>
-                    <li>All Servlets must implement the javax.servlet.Servlet interface. 
-                        <ul>
-                            <li>This interface defines the init() method to match the initialization phase of a Servlet life cycle. When a container loads a Servlet, it invokes the init() method before servicing any requests.</li>
-                        </ul>
-                    </li>
-                </ul>
+                
+                    <p> &emsp;&emsp;-This is the first phase of the Servlet life cycle  and represents the creation and initialization of resources the Servlet may need to service requests.</p>
+                    <p>&emsp;&emsp;-All Servlets must implement the javax.servlet.Servlet interface.</p> 
+                        <p>&emsp;&emsp;&emsp;&emsp;~This interface defines the init() method to match the initialization phase of a Servlet life cycle. </p>
+                        <p>&emsp;&emsp;&emsp;&emsp;~When a container loads a Servlet, it invokes the init() method before servicing any requests.</p>
+                    
             </li>
-            <li><h3>Service</h3>
-                <ul>
-                    <li>It represents all interactions with requests until the Servlet is destroyed. </li>
-                    <li>The service() method of a Servlet is invoked once per a request and is responsible for generating the response to that request. </li>
-                    <li>The Servlet specification defines the service() method to take two parameters: a javax.servlet.ServletRequest and a javax.servlet.ServletResponse object.
-                        <ul> 
-                            <li>These two objects represent a client's request for the dynamic resource and the Servlet's response to the client. </li>
-                            <li>By default a Servlet is multi-threaded, meaning that typically only one instance of a Servlet1 is loaded by a JSP container at any given time. </li>
-                            <li>Initialization is done once, and each request after that is handled concurrently2 by threads executing the Servlet's service() method.</li>
-                        </ul>
-                    </li>
-                </ul>
+                    <br>
+           <li><h3>Service</h3>
+                
+                    <p>&emsp;&emsp;-It represents all interactions with requests until the Servlet is destroyed. </p>
+                    <p>&emsp;&emsp;-The service() method of a Servlet is invoked once per a request and is responsible for generating the response to that request. </p>
+                    <p>&emsp;&emsp;-The Servlet specification defines the service() method to take two parameters: a javax.servlet.ServletRequest and a javax.servlet.ServletResponse object.</p> 
+                            <p>&emsp;&emsp;&emsp;&emsp;~These two objects represent a client's request for the dynamic resource and the Servlet's response to the client. </p>
+                            <p>&emsp;&emsp;&emsp;&emsp;~By default a Servlet is multi-threaded, meaning that typically only one instance of a Servlet1 is loaded by a JSP container at any given time. </p>
+                            <p>&emsp;&emsp;&emsp;&emsp;~Initialization is done once, and each request after that is handled concurrently2 by threads executing the Servlet's service() method.</p>
             </li>
+            <br>
             <li><h3>Destruction</h3>
-                <ul>
-                    <li>It represents when a Servlet is being removed from use by a container. </li>
-                    <li>The destroy() method to correspond to the destruction life cycle phase. </li>
-                    <li>Each time a Servlet is about to be removed from use, a container calls the destroy() method, allowing the Servlet to gracefully terminate and tidy up any resources it might have created.</li>
-                </ul>
+                
+                    <p>&emsp;&emsp;-It represents when a Servlet is being removed from use by a container. </p>
+                    <p>&emsp;&emsp;-The destroy() method to correspond to the destruction life cycle phase. </p>
+                    <p>&emsp;&emsp;-Each time a Servlet is about to be removed from use, a container calls the destroy() method, allowing the Servlet to gracefully terminate and tidy up any resources it might have created.</p>
+                
             </li>
-        </ul>
-        <p>(n.d.). InformIT: The Trusted Technology Source for IT Pros and Developers. Servlet Life Cycle | Java Servlets | InformIT. Retrieved from http://www.informit.com/articles/article.aspx?p=170963&seqNum=2</p>  
-    </ul>
-    
+                                </ul>   
+
+    <br>
     <h1>httpServlet</h1>
-        <ul>
-            <li>Java servlet used to handle HTTP requests and generate HTTP responses.</li>
-        </ul>
+            <p>&emsp;&emsp;-Provides an abstract class to be subclassed to create an HTTP servlet suitable for a Web site. </p>
+            <p> &emsp;&emsp;-A subclass of HttpServlet must override at least one method, usually one of these:</p>
+           
+                <p>&emsp;&emsp;&emsp;&emsp;~<em>doGet</em>, if the servlet supports HTTP GET requests</p>
+                <p>&emsp;&emsp;&emsp;&emsp;~<em>doPost</em>, for HTTP POST requests</p>
+                <p>&emsp;&emsp;&emsp;&emsp;~<em>doPut</em>, for HTTP PUT requests</p>
+                <p>&emsp;&emsp;&emsp;&emsp;~<em>doDelete</em>, for HTTP DELETE requests</p>
+                <p>&emsp;&emsp;&emsp;&emsp;~<em>init and destroy</em>, to manage resources that are held for the life of the servlet</p>
+                <p>&emsp;&emsp;&emsp;&emsp;~<em>getServletInfo</em>, which the servlet uses to provide information about itself</p>
+            
+            <p>&emsp;&emsp;-There's almost no reason to override the service method. service handles standard HTTP requests by dispatching them to the handler methods for each HTTP request type (the doXXX methods listed above).</p>
+            <p>&emsp;&emsp;-Likewise, there's almost no reason to override the doOptions and doTrace methods.</p>
+            <p>&emsp;&emsp;-When the servlet container uses HTTP protocol to send request, then it creates HttpServletRequest and HttpServletResponse objects. HttpServletRequest binds the request information like header and request methods and HttpServletResponse binds all information of HTTP protocol.</p>
+            <p>&emsp;&emsp;-HttpServlet does not override in it or destroy method. However, it uses service (-,-) method. ServletRequest and ServletResponse references are cast into HttpServletRequest and HttpServletResponse, respectively.</p>
+            <p>&emsp;&emsp;-Hosted in a 'web container', which is a component in a Java 'application server' (e.g., Apache Tomcat, Red HotJBoss/WildFly, Oracle GlassFish, IBM WebSphere, etc.)</p>
+            <br>
+            <br>
+            <br>
+            <h4>REFERENCES:</h4>
+            <p>&emsp;&emsp;(n.d.). Apache Tomcat® - Welcome!. HttpServlet (Servlet API Documentation). Retrieved from http://tomcat.apache.org/tomcat-5.5-doc/servletapi/javax/servlet/http/HttpServlet.html</p>
+            <p>&emsp;&emsp;(n.d.). Computer Notes. What is HttpServlet and it’s Methods?. Retrieved from http://ecomputernotes.com/servlet/intro/httpservlet-and-it-s-methods</p>
+            <p>&emsp;&emsp;(n.d.). InformIT: The Trusted Technology Source for IT Pros and Developers. Servlet Life Cycle | Java Servlets | InformIT. Retrieved from http://www.informit.com/articles/article.aspx?p=170963&seqNum=2</p>                  
+            
+            
                     </article>
                 </div><br>
+                
+                
+                
                 <button id="btn" onclick="myFunction()">Go Back!</button>
             </div>
             </div>
