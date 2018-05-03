@@ -1,8 +1,15 @@
 <?php
     session_start();
 
-    $db = mysqli_connect('localhost', 'root', '', 'authentication');    
+    $host="localhost" ;
+    $user="root";
+    $password="";
+    $db="authentication";
 
+    mysql_connect($host, $user, $password);
+    mysql_select_db($db);
+    
+    $conn = new myslqi($host, $user, $password, $db);
     $username = "";
     $errors = array();
 
@@ -15,6 +22,8 @@
         $username = mysqli_real_escape_string($db, $_POST['username']);
         $password = mysql_real_escape_string($db, $_POST['password']);
         $password2 = mysql_real_escape_string($db, $_POST['password2']);
+        
+        
         
         if (empty($username)) {
             array_push($errors, "Username is required");

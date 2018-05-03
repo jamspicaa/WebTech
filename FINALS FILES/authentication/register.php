@@ -13,7 +13,7 @@
     <div class="Container">     
         <h1 id="Activity-Title">WEB TECHNOLOGY AND SYSTEMS 2018</h1>
             
-            <form method="post" action="register.php">
+            <form method="post" action="server.php">
                 
                 <?php include('errors.php'); ?>
                 
