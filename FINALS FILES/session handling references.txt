@@ -1,0 +1,5 @@
+https://www.studytonight.com/servlet/session-management.php
+http://www.nusphere.com/kb/phpmanual/ref.session.htm
+https://www.javatpoint.com/session-tracking-in-servlets
+https://www.journaldev.com/1907/java-session-management-servlet-httpsession-url-rewriting
+https://www.javatpoint.com/session-tracking-in-servlets
