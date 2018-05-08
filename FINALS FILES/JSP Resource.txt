@@ -1,0 +1,4 @@
+https://www.tutorialspoint.com/jsp/jsp_syntax.htm
+https://www.javatpoint.com/jsp-tutorial
+https://www.ntu.edu.sg/home/ehchua/programming/java/JavaServerPages.html
+https://www.studytonight.com/jsp/introduction-to-jsp.php
