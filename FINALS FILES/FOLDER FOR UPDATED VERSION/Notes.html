@@ -36,6 +36,7 @@
                         <option value="1">Java Servlets</option>
                         <option value="2">Session Handling</option>
                         <option value="3">PHP</option>
+                        <option value="4">Node.js</option>
                     </select>
                 </div>
                   
@@ -77,12 +78,368 @@
                             <p>It represents when a Servlet is being removed from use by a container.The destroy() method to correspond to the destruction life cycle phase. </p>
                     
                             <p>Each time a Servlet is about to be removed from use, a container calls the destroy() method, allowing the Servlet to gracefully terminate and tidy up any resources it might have created.</p>
-                            
-                            <p>(n.d.). InformIT: The Trusted Technology Source for IT Pros and Developers. Servlet Life Cycle | Java Servlets | InformIT. Retrieved from http://www.informit.com/articles/article.aspx?p=170963&seqNum=2</p>  
     
                     <h2>httpServlet</h2>
-                            <p>Java servlet used to handle HTTP requests and generate HTTP responses.<p>    
+                    <p>Java servlet used to handle HTTP requests and generate HTTP responses.</p>  
                     
+                    <p> &emsp;&emsp;-A subclass of HttpServlet must override at least one method, usually one of these:</p>
+           
+                <p>&emsp;&emsp;&emsp;&emsp;~<em>doGet</em>, if the servlet supports HTTP GET requests</p>
+                <p>&emsp;&emsp;&emsp;&emsp;~<em>doPost</em>, for HTTP POST requests</p>
+                <p>&emsp;&emsp;&emsp;&emsp;~<em>doPut</em>, for HTTP PUT requests</p>
+                <p>&emsp;&emsp;&emsp;&emsp;~<em>doDelete</em>, for HTTP DELETE requests</p>
+                <p>&emsp;&emsp;&emsp;&emsp;~<em>init and destroy</em>, to manage resources that are held for the life of the servlet</p>
+                <p>&emsp;&emsp;&emsp;&emsp;~<em>getServletInfo</em>, which the servlet uses to provide information about itself</p>
+            
+            <p>There's almost no reason to override the service method. service handles standard HTTP requests by dispatching them to the handler methods for each HTTP request type (the doXXX methods listed above).</p>
+            <p>Likewise, there's almost no reason to override the doOptions and doTrace methods.</p>
+            <p>When the servlet container uses HTTP protocol to send request, then it creates HttpServletRequest and HttpServletResponse objects. HttpServletRequest binds the request information like header and request methods and HttpServletResponse binds all information of HTTP protocol.</p>
+            <p>HttpServlet does not override in it or destroy method. However, it uses service (-,-) method. ServletRequest and ServletResponse references are cast into HttpServletRequest and HttpServletResponse, respectively.</p>
+            <p>Hosted in a 'web container', which is a component in a Java 'application server' (e.g., Apache Tomcat, Red HotJBoss/WildFly, Oracle GlassFish, IBM WebSphere, etc.)</p>
+            <br>
+            <br>
+            <br>
+            <h4>REFERENCES:</h4>
+            <p>&emsp;&emsp;(n.d.). Apache Tomcat® - Welcome!. HttpServlet (Servlet API Documentation). Retrieved from http://tomcat.apache.org/tomcat-5.5-doc/servletapi/javax/servlet/http/HttpServlet.html</p>
+            <p>&emsp;&emsp;(n.d.). Computer Notes. What is HttpServlet and it’s Methods?. Retrieved from http://ecomputernotes.com/servlet/intro/httpservlet-and-it-s-methods</p>
+            <p>&emsp;&emsp;(n.d.). InformIT: The Trusted Technology Source for IT Pros and Developers. Servlet Life Cycle | Java Servlets | InformIT. Retrieved from http://www.informit.com/articles/article.aspx?p=170963&seqNum=2</p>                  
+                    
+                </div>
+                <button id="btn" onclick="myFunction()">Go Back!</button>
+            </div>
+         </div>
+                  
+        <div id = "f2" style="display:none">
+                
+            <div class="center-on-page">  
+                <div class="container">
+                    <header>
+                        <h1>Session Handling</h1>
+                    </header>
+                    
+                    <h2>Session Handling in Java Servlet</h2>
+                        <h3> What is a Session?</h3>
+                            <p>Session is the communication between the client and the server that is compose of multiple requests and responses between client and server.It is being maitained if some information about the session is being passed between the server and client  everytime that there is a responses and requests that is happening.The Java servlets are server-side programs, which is running inside a web server, that handle clients' requests and return a customized or dynamic response for each request.</p>
+                                
+                            <h2> User Authentication </h2>
+                    <p>User can give authentication credentials in order to pass authentication information between the server and client.</p>
+                    
+                    <h2>HTML Hidden Field</h2>
+                    <p>We can make unique hidden field in the HTML so users can start to navigate, we can set its value unique to the user and keep track of the session.</p>
+                                
+                    <h2>URL Rewriting</h2>
+                    <p>We can attach a session identifier parameter in every request and response to keep track of the session.</p>
+                    
+                    <h2>Cookies</h2>
+                    <p>Cookies are sent by the server with response header and it is being stored in the browser cookies.Everytime a  client create requests, it adds the cookie to the request header and we can utilize it to keep track of the session.</p>
+                    
+                    <h2>Session Management API</h2>
+                    <p>It is built with the other methds for session tracking.</p>
+                    
+                    <h2>Session Handling in Java - Cookies</h2>
+                    <p>It is used to personalize responses based on the users choice or to keeo in track in the session.It is used to personalize responses based on the users choice or to keeo in track in the session.</p>
+                    
+                    <h2>Session Handling in Java Servlet - HTTPSession</h2>
+                    <p>Servlet API gives Session management through the use of  HttpSession interface.HttpSession allows us to set objects as attributes that can be retrieved in future requests.</p>
+                    
+                    <p>&emsp;&emsp;&emsp;&emsp;Ways to provide an identifier:</p>
+                    
+                    <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;HttpSession getSession()</h3>
+                    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;It returns a HTTPSession Object. It  returns a session object that is being attached with a request.</p>
+                    
+                    
+                    <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;HttpSession getSession(boolean flag)</h3>
+                    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;It returns a HTTPSession Object if a request contains a session otherwise it returns null.</p>
+                    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Methods of HTTPSession:</p>
+                    <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;String getID()</h3>
+                    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;It returns a string containing the unique identifier assigned to this session.</p>
+                    
+                    <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Object getAttribute(String name)</h3>
+                    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;It returns an object bound with the specified name in thie session, or null if no object is bound under the name.</p>
+                    
+                     <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Methods to work with Session attributes</p>
+                    
+                    <h4>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;getAttributeNames()</h4>
+                    <h4>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;removeAttribute(String name)</h4>
+                    <h4>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;setAttribute(String name, Object value)</h4>
+                    
+                    <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; long getCreationTime()</h3>
+                    
+                    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;it returns the time when this session was created which was January 1, 1970. We can get last accessed time with getLastAccessedTime() method.</p>
+
+                    <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;setMaxInactiveInterval(int interval) </h3>
+                     <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;It identifies the time, in seconds of  client's requests before the servlet container will invalidate this session. We can get session timeout value using the method getMaxInactiveInterval()</p>
+                    
+                    
+                    <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ServletContext getServletContext()</h3>
+                     <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;It returns the ServletContext object for the application.</p>
+                    
+                     <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;boolean isNew()</h3>
+                     <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;It  returns true if the client does not yet know about the session or if the client chooses not to join the session. </p>
+                    
+                    <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;void invalidate()</h3>
+                     <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;It invalidates a session then unbinds any objects bound to it.</p>
+                    
+                    
+                    <h2>Session Handling in Java Servlet - URL Rewriting</h2>
+                    <p>We can encode URL with HttpServletResponse encodeURL() method and if we have to redirect the request to another resource and we want to provide session information, we can use encodeRedirectURL() method.</p>
+                    
+                    <h2>Session Handling in PHP</h2>
+                    <p>PHP is one of the widely used Server side scripting language. Session Handling supports in PHP that consists of a way to preserve specific data across subsequent accesses. </p>
+                    
+                    <p>&emsp;&emsp;&emsp;&emsp;List of PHP Functions:</p>
+                    <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;session_start()</h3>
+                    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;It starts new or resumes an existing session.</p>
+                    
+                     <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;session_isset()</h3>
+                    <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;session_unset()</h3>
+                     <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;It sets all session variables to free.</p>
+                    <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;session_destroy()</h3>
+                     <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;It destroys all registered data to a session.</p>
+                    <br>
+            <br>
+            <br>
+            <h4>REFERENCES:</h4>
+             <p>&emsp;&emsp;(n.d.). JournalDev - Java, Java EE, Android, Python, Web Development Tutorials. Session Management in Java - HttpServlet, Cookies, URL Rewriting - JournalDev. Retrieved from http://www.journaldev.com/1907/java-session-management-servlet-httpsession-url-rewriting </p>
+            <p>&emsp;&emsp;(n.d.). PHP: Hypertext Preprocessor. PHP: Sessions - Manual . Retrieved from http://php.net/manual/en/book.session.php</p>
+            <p>&emsp;&emsp;(n.d.). Tutorials - Javatpoint. Session Tracking in Servlets - javatpoint. Retrieved from http://www.javatpoint.com/session-tracking-in-servlets </p>
+            <p>&emsp;&emsp;(n.d.). W3Schools Online Web Tutorials. PHP 5 Sessions. Retrieved from http://www.w3schools.com/php/php_sessions.asp</p>
+                </div>
+                <button id="btn" onclick="myFunction()">Go Back!</button>
+            </div>
+         </div>
+                  
+        <div id = "f3" style="display:none">
+                
+            <div class="center-on-page">  
+                <div class="container">
+                    <header>
+                        <h1>PHP</h1>
+                    </header>
+                    
+                    <h2> </h2>
+                        <h3> </h3>
+                            
+            <br>
+            <br>
+            <br>
+            <h4>REFERENCES:</h4>
+            <p>&emsp;&emsp; </p>
+            <p>&emsp;&emsp; </p>
+                </div>
+                <button id="btn" onclick="myFunction()">Go Back!</button>
+            </div>
+         </div>
+                  
+        <div id = "f4" style="display:none">
+                
+            <div class="center-on-page">  
+                <div class="container">
+                    <header>
+                        <h1>Node.js</h1>
+                    </header>
+                    
+                    <h2>What is Node.js? </h2>
+                    <p>Node.js is a JavaScript run-time environment. It is a JavaScript runtime built on Chrome’s V8 JavaScript engine.It uses an event-driven, non-blocking I/O model that makes it lightweight and well-organized.</p>
+                    <p>Node.js’ package ecosystem is the largest ecosystem of open source libraries in the world which is npm.Node.js is a free and an open source server environmentIt runs on different types of platforms such as Windows, Linux, Unix, Mac OS X.It uses JavaScript on the server. The Node run-time environment contains everything a user may need in order to execute a program written in JavaScript.</p>
+                    <p>Node.js came became real when the original developers of JavaScript extended it from something a user could only run in a browser into something they could run on their device as a standalone application.</p>
+                    <p>Both your browser JavaScript and Node.js run on the V8 JavaScript runtime engine. This engine takes your JavaScript code and converts it into a faster machine code. Machine code is low level code which the computer can run without needing to first interpret it.</p>
+                       
+                    <h2>Input/ Output (I/O)</h2>
+                    <p>It can be anything that ranges from reading/writing local files to making an HTTP request to an API.</p>
+                    
+                    <h2>Blocking I/O (left) vs Non-Blocking I/O (right)</h2>
+                    <h2>&emsp;&emsp;•	Blocking I/O</h2>
+                    <p>&emsp;&emsp;In this method, the request of a user b’s data is not initiated until user a’s data is being displayed to the screen.</p>
+                    <h2>&emsp;&emsp;•	Non-Blocking I/O</h2>
+                    <p>&emsp;&emsp;A user can initiate a data request for user b without waiting for the response the request for user a. A user can initiate both requests in parallel.This non-blocking, I/O removes the need for multi-threading, since the server can handle multiple requests at the same time.
+                    
+                    <h2>File request using PHP or ASP</h2>
+                    <p>1.	Sends the task to the computer's file system.</p>
+                    <p>2.	Waits while the file system opens and reads the file.</p>
+                    <p>3.	Returns the content to the client.</p>
+                    <p>4.	Ready to handle the next request.</p>
+                      
+                    
+                    <h2>File request using Node.js</h2>
+                    <p>1.	Sends the task to the computer's file system.</p>
+                    <p>2.	Ready to handle the next request.</p>
+                    <p>3.	When the file system has opened and read the file, the server returns the content to the client.</p>
+                    
+                    <h3>Note:</h3>
+                    <p>•	Node.js removes the waiting, and continues with the next request.</p>
+                    <p>•	It runs single-threaded, non-blocking, asynchronously programming, which is very memory efficient.</p>
+                    
+                    <h2>What can Node.js do?</h2>
+                    <p>•	It generates a dynamic page content</p>
+                    <p>•	Create, open, read, write, delete, and close files on the server</p>
+                    <p>•	It can collect form data</p>
+                    <p>•	Add, delete, modify data in your database</p>
+                    
+                    <h2>What is a Node.js File? </h2>
+                    <p>•	It contains tasks that will be implemented on certain events</p>
+                    <p>•	Node.js files must be initiated on the server before having any effect </p>
+                    <p> •	Node.js files have extension ".js"</p>
+                    
+                    <h2>Node.js Modules</h2>
+                    <h3>What is a Module in Node.js?</h3>
+                    <p>A set of functions a user desires to include in a application.</p>
+                    
+                    <h3>&emsp;&emsp;•	Built-in Modules</h3>
+                    <p>&emsp;&emsp;Contains a set of built-in modules which a user can use without installing it.</p>
+                    
+                     <h3>&emsp;&emsp;•	Include Modules</h3>
+                    <p>&emsp;&emsp;Uses  require() function with the name of the module:</p>
+                    <pre>
+                    <code>
+                           var http = require('http');
+                    </code>
+                    </pre>
+                    
+                <h2>Creating Own Modules</h2>
+                    <p>•	A user can create their own modules, and easily include them in their applications.</p>
+                    <p>•	It uses the exports keyword to make methods available outside the module file.</p>
+                    <pre>
+                    <code>
+                           exports.myDateTime = function () {
+    	               return Date();
+	                       };
+
+                    </code>
+                    </pre>
+                    
+                <h2>Including Own Module</h2>
+                    <pre>
+                    <code>
+                           var http = require('http');
+	var dt = require('./myfirstmodule');
+
+	http.createServer(function (req, res) {
+    	res.writeHead(200, {'Content-Type': 'text/html'});
+    	res.write("The date and time are currently: " + dt.myDateTime());
+   	 res.end();
+	}).listen(8080);
+
+                    </code>
+                    </pre>
+             <h2>Node.js HTTP Module</h2> 
+                    <h2>&emsp;&emsp;•	The Built-in HTTP Module</h2>
+                    <p>&emsp;&emsp;Contains a built-in module called HTTP, which allows Node.js to move data over the Hyper Text Transfer Protocol (HTTP).</p>
+                    <p>&emsp;&emsp;It uses  the require() method to add a HTTP module:</p>
+                    <pre>
+                    <code>
+                    var http = require('http');
+                    </code>
+                    </pre>
+            <h2>Node.js as a Web Server</h2>
+                    <p>•	The HTTP module can make an HTTP server that listens to server ports and provides a response back to the client.</p>
+                    <p>•	Use the createServer() method to create an HTTP server:</p>
+                    <pre>
+                    <code>
+                    var http = require('http');
+
+	//create a server object:
+	http.createServer(function (req, res) {
+ 	 res.write('Hello World!'); //write a response to the client
+  	res.end(); //end the response
+	}).listen(8080); //the server object listens on port 8080
+
+                    </code>
+                    </pre>
+                    
+            <h2>Adding HTTP Header</h2>
+            <p>If the response from the HTTP server is meant to be shown as HTML, the user should comprise  an HTTP header with the correct content type: </p>
+                    
+                    <pre>
+                    <code>var http = require('http');
+	http.createServer(function (req, res) {
+ 	 res.writeHead(200, {'Content-Type': 'text/html'});
+ 	 res.write('Hello World!');
+  	res.end();
+	}).listen(8080);
+</code>
+                    </pre>
+                    
+            <h2>Reaading Query String</h2>
+                <p>The function passed into the http.createServer() has a req argument that represents the request from the client, as an object (http.IncomingMessage object).</p>
+                    <p>This object has a property called "url" which holds the part of the url that comes after the domain name:</p>  
+                    
+            <pre>
+            <code>
+            demo_http_url.js
+		var http = require('http');
+		http.createServer(function (req, res) {
+   		 res.writeHead(200, {'Content-Type': 'text/html'});
+    		res.write(req.url);
+    		res.end();
+		}).listen(8080);
+
+            </code>
+            </pre>
+                    
+                    
+        <h2>Splitting Query String</h2>
+                    <p>There are built-in modules to split the query string into readable parts, such as the URL module.</p>
+                <pre>
+                    <code>
+                        var http = require('http');
+	var url = require('url');
+
+	http.createServer(function (req, res) {
+ 	 res.writeHead(200, {'Content-Type': 'text/html'});
+	  var q = url.parse(req.url, true).query;
+	  var txt = q.year + " " + q.month;
+	  res.end(txt);
+	}).listen(8080);
+
+                    </code>
+                </pre>
+                    
+            <h2>Node.js File System Module</h2>
+                    <h2>&emsp;&emsp; •	Node.js as a File Server</h2>
+                <p>&emsp;&emsp;The Node.js file system module let a user work with the file system on a computer.</p>
+                    <p>&emsp;&emsp;Uses the require() method to include the File System module</p>
+                    
+                    <pre>
+                        <code>
+                        var fs = require('fs');
+                        </code>
+                    </pre>
+                    
+                    <h2>Common use for the File System module:</h2>
+                    <p>&emsp;&emsp;•	Read files</p>
+                    <p>&emsp;&emsp; •	Create files</p>
+                    <p>&emsp;&emsp; •	Update files</p>
+                    <p>&emsp;&emsp; •	Delete files</p>
+                    <p>&emsp;&emsp; •	Rename files</p>
+                    
+                    
+                    <h2>Read Files</h2>
+                    <p>The fs.readFile() method is used to read files on your computer.</p>
+                    <pre>
+                        <code>
+                        var http = require('http');
+	var fs = require('fs');
+	http.createServer(function (req, res) {
+	  fs.readFile('demofile1.html', function(err, data) {
+ 	   res.writeHead(200, {'Content-Type': 'text/html'});
+  	  res.write(data);
+  	  res.end();
+ 	 });
+	}).listen(8080);
+
+                        </code>
+                    </pre>
+                    
+                    
+                    
+            <br>
+            <br>
+            <br>
+            <h4>REFERENCES:</h4>
+            <p>&emsp;&emsp; (n.d.). W3Schools Online Web Tutorials. Node.js Introduction. Retrieved from http://www.w3schools.com/nodejs/nodejs_intro.asp</p>
+            <p>&emsp;&emsp; (n.d.). Dave's page. Nodejs/Javascript Course Notes. Retrieved from http://www.davekuhlman.org/nodejs_course_01.html</p>
+                    <p>&emsp;&emsp;(n.d.). Stanford University. Retrieved from http://web.stanford.edu/class/cs142/cgi-bin/slides/NodeJS.pdf</p>
                 </div>
                 <button id="btn" onclick="myFunction()">Go Back!</button>
             </div>
@@ -99,6 +456,9 @@
        if (selopt == 2) {
            document.getElementById("f2").style.display = "block";
            document.getElementById("f1").style.display = "none";
+       }
+       if (selopt == 4) {
+            document.getElementById("f4").style.display = "block";
        }
    }
     
