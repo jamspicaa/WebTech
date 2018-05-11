@@ -1,0 +1,167 @@
+font-face{
+    font-family: Antipasto;
+    src: url(fonts/Antipasto-RegularTrial.ttf);
+}
+
+font-face{
+    font-family: Messages;
+    src: url(fonts/Messages.ttf);
+}
+
+font-face{
+    font-family: Instruction;
+    src: url(fonts/Instruction.otf);
+}
+
+font-face{
+    font-family:;
+    src: url(fonts/BeautyDemo.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+
+nav.black {
+    background: rgba(0,0,0,0.8);
+    height: 100px;
+    padding: 10px 100px;
+}
+
+nav .logo {
+    padding: 22px 20px;
+    margin-top: -.5%;
+    float: left;
+    font-size: 5vh;
+    transition: .3s;
+    font-family: "Instruction";
+    color: white;
+}
+
+nav.black .logo {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: #151515;
+    padding: 12px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+    color: white;
+    font-family: "Antipasto";
+    font-size: 3.5vh;
+}
+
+nav.black ul li a {
+    color: #fff;
+}
+
+
+#Activity-Title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7vh;
+    font-family: "Messages";
+    color: white;
+}
+
+
+
+section.Image-Notes-Section {
+    widows: 100%;
+    height: 100vh;
+    background: url(images/notes.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.Activity-Container {
+    background-color: #F8F1EC;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    float: left;
+}
+
+.center-on-page {
+    text-align: left;
+    margin-left: 5%;
+}
+
+#opts {
+    margin-left: 36%;
+    margin-top: 3%;
+    padding: 1%;
+    font-size: 3vh;
+    font-family: "Instruction";
+    margin-bottom: 5%;
+}
+
+#Note-Title{
+    text-align: center;
+    font-size: 7vh;
+    font-family: "Messages";
+    padding-top: 7%;
+}
+
+h1 {
+    font-size: 5vh;
+    font-family: "Antipasto";
+    padding-bottom: 1%;
+}
+
+h2 {
+    font-size: 4vh;
+    font-family: "Antipasto";
+    padding-bottom: 1%;
+    
+}
+
+h3 {
+    font-size: 3vh;
+    font-family: "Antipasto";
+    padding-bottom: 1%;
+    
+}
+
+p {
+    font-family: Calibri Light;
+    font-size: 3vh;
+    padding-bottom: 1%;
+}
+
+#btn {
+    padding: 1%;
+    font-size: 2vh;
+}

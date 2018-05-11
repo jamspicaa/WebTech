@@ -1,0 +1,139 @@
+font-face{
+    font-family: Antipasto;
+    src: url(fonts/Antipasto-RegularTrial.ttf);
+}
+
+font-face{
+    font-family: Messages;
+    src: url(fonts/Messages.ttf);
+}
+
+font-face{
+    font-family: Instruction;
+    src: url(fonts/Instruction.otf);
+}
+
+font-face{
+    font-family:;
+    src: url(fonts/BeautyDemo.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: url(images/webtel.jpg);
+    background-size: cover;
+    
+}
+
+#Activity-Title {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7vh;
+    font-family: "Messages";
+    color: black;
+}
+
+#Login-Icon {
+    width: 18%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: #32CD99;
+    color: white;
+    padding: 2%;
+    margin-top: 3%;
+    border: none;
+    width: 50%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.Container-for-authentication {
+    text-align: center;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 2%;
+    text-align: center;
+    font-size: 3vh;
+    font-family: "Antipasto";
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=password] {
+    width: 50%;
+    padding: 2%;
+    margin-top: 2%;
+    font-size: 3vh;
+    font-family: "Antipasto";
+    text-align: center;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=password2] {
+    width: 50%;
+    padding: 2%;
+    margin-top: 2%;
+    font-size: 3vh;
+    font-family: "Antipasto";
+    text-align: center;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.Authentication-Form-Sign {
+    border-radius: 5px;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,0.5);
+}
+
+.Authentication-Form-Login {
+    border-radius: 5px;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,0.5);
+}
+
+.Message-Head {
+    font-size: 7vh;
+    font-family: "Messages";
+    margin-bottom: 2%;
+    margin-top: 2%;
+    
+}
+
+.Message-Foot {
+    font-size: 2.5vh;
+    margin-top: 5%;
+    margin-bottom: -3%;
+    font-family: "Antipasto";
+}
+
+
+
