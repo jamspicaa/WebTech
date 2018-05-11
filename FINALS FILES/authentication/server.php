@@ -1,55 +1,36 @@
-<?php
-    session_start();
-
-    $host="localhost" ;
-    $user="root";
-    $password="";
-    $db="authentication";
-
-    mysql_connect($host, $user, $password);
-    mysql_select_db($db);
-    
-    $conn = new myslqi($host, $user, $password, $db);
-    $username = "";
-    $errors = array();
-
-    if (isset($POST['register'])) {
-        register();
-    }
-
-    
-    if (isset($POST['register'])) {
-        $username = mysqli_real_escape_string($db, $_POST['username']);
-        $password = mysql_real_escape_string($db, $_POST['password']);
-        $password2 = mysql_real_escape_string($db, $_POST['password2']);
-        
-        
-        
-        if (empty($username)) {
-            array_push($errors, "Username is required");
-        }
+<?php 
+	session_start();
+	$host = 'localhost';
+	$user = 'root';
+	$pass = '';
+	$dbname = 'authentication';
+	$conn = mysqli_connect($host,$user,$pass,$dbname) or die('Cannot connect to db');
+	
+	if (isset($_POST['register'])) {
+		$username = mysqli_real_escape_string($conn, $_POST['username']);
+		$password1 = mysqli_real_escape_string($conn, $_POST['password']);
+		$password2 = mysqli_real_escape_string($conn, $_POST['password2']);
+		if (empty($username)) {
+          //  array_push($errors, "Username is required");
+        }else 
         if (empty($password)) {
-            array_push($errors, "Password is required");
-        }
-        
+         //   array_push($errors, "Password is required");
+        } else         
         if ($password != password2) {
-            array_push($errors, "The two passwords do not match");
+         //   array_push($errors, "The two passwords do not match");
         }
-        
-        if (count($errors) == 0) {
-            $password = md5($password);
-            $mysqli_query = "INSERT INTO users (username, password) 
-                    VALUES  ('$username', '$password')";
-            echo "Registration was succesful"; 
-            mysqli_query($db, $sql);
-        }
-        
-    }
-
+		
+		$sql = "SELECT username from users where username = '$username' ";
+		$result = mysqli_query($conn,$sql);
+        $count = mysqli_num_rows($result);
+        if($count != 1) {
+			if($password1==$password2){
+				$password = md5($password1);
+				$sql = "INSERT INTO users (username, password, password2)
+							VALUES ('$username', '$password', '$password')";
+				mysqli_query($conn,$sql);
+				print "Success";
+			}
+		}
+	}
 ?>
-
-
-
-
-
-
