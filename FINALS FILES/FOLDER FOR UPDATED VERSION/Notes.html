@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Finals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="NotesStyle.css">
+    <link rel="shortcut icon" href="images/globe.png" type="image/png">
+</head>
+<body>
+    <div class="Header-Container">
+        <nav>
+            <div class="logo">Web Technology<br><br>
+            </div>
+            <ul>
+ 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Notes.html">Notes</a></li>
+                <li><a href="Activity.html">Activities</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>  
+        
+        <section class="Image-Notes-Section">
+            <h1 id="Activity-Title">Course Notes</h1>
+        </section>
+    </div>
+    
+    <div class="Activity-Container">
+              <div class="center-on-page">
+                  <div id="Note-Title">Please select a topic</div>
+                <div class="select">
+                    <select class="form-control" id = "opts" onChange="showForm()" name="notes">
+                        <option disabled selected>Topic you want to study:</option>
+                        <option value="1">Java Servlets</option>
+                        <option value="2">Session Handling</option>
+                        <option value="3">PHP</option>
+                    </select>
+                </div>
+                  
+            <div id = "f1" style="display:none">
+                
+            <div class="center-on-page">  
+                <div class="container">
+                    <header>
+                        <h1>Java Servlets</h1>
+                    </header>
+                    
+                    <h2> Server-Side Programming</h2>
+                        <h3> Java Servlets</h3>
+                            <p>Java objects that are intended to play the role of server components in client-server communications.</p>
+                            
+                            <p>The Java servlets are server-side programs, which is running inside a web server, that handle clients' requests and return a customized or dynamic response for each request.</p>
+                                
+                            <p>Using Servlets, you can collect input from users through web page forms, present records from a database or another source, and create web pages dynamically.</p>
+                                
+                            <p>Part of the Java EE specification(See <a href="https://docs.oracle.com/javaee/7/api/javax/servlet/package-summary.html" target="_blank">Java Servlet API </a>for more details)</p>
+
+                        
+                    <h2>Servlet life cycle</h2>
+                        <h3>Instantiation</h3>
+                            <p>This is the first phase of the Servlet life cycle  and represents the creation and initialization of resources the Servlet may need to service requests.All Servlets must implement the javax.servlet.Servlet interface.</p>
+                            
+                            <p>This interface defines the init() method to match the initialization phase of a Servlet life cycle. When a container loads a Servlet, it invokes the init() method before servicing any requests.</p>
+                                
+                        <h3>Service</h3>
+                            <p>It represents all interactions with requests until the Servlet is destroyed. The service() method of a Servlet is invoked once per a request and is responsible for generating the response to that request. </p>
+                    
+                            <p>The Servlet specification defines the service() method to take two parameters: a javax.servlet.ServletRequest and a javax.servlet.ServletResponse object.
+                        
+                            <p>These two objects represent a client's request for the dynamic resource and the Servlet's response to the client. By default a Servlet is multi-threaded, meaning that typically only one instance of a Servlet1 is loaded by a JSP container at any given time. </p>
+                    
+                            <p>Initialization is done once, and each request after that is handled concurrently2 by threads executing the Servlet's service() method.</p>
+                       
+                        <h3>Destruction</h3>
+                            <p>It represents when a Servlet is being removed from use by a container.The destroy() method to correspond to the destruction life cycle phase. </p>
+                    
+                            <p>Each time a Servlet is about to be removed from use, a container calls the destroy() method, allowing the Servlet to gracefully terminate and tidy up any resources it might have created.</p>
+                            
+                            <p>(n.d.). InformIT: The Trusted Technology Source for IT Pros and Developers. Servlet Life Cycle | Java Servlets | InformIT. Retrieved from http://www.informit.com/articles/article.aspx?p=170963&seqNum=2</p>  
+    
+                    <h2>httpServlet</h2>
+                            <p>Java servlet used to handle HTTP requests and generate HTTP responses.<p>    
+                    
+                </div>
+                <button id="btn" onclick="myFunction()">Go Back!</button>
+            </div>
+         </div>
+        </div>
+    </div>
+
+<script>
+   function showForm() {
+       var selopt = document.getElementById("opts").value;
+       if (selopt == 1) {
+            document.getElementById("f1").style.display = "block";
+       }
+       if (selopt == 2) {
+           document.getElementById("f2").style.display = "block";
+           document.getElementById("f1").style.display = "none";
+       }
+   }
+    
+    function myFunction() {
+        location.reload();
+    }
+</script>
+</body>
+</html>

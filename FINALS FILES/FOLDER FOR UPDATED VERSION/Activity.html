@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Finals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="images/globe.png" type="image/png">
+</head>
+<body>
+    <div class="Header-Container">
+        <nav>
+            <div class="logo">Web Technology<br><br>
+            </div>
+            <ul>
+ 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Notes.html">Notes</a></li>
+                <li><a href="Activity.html">Activities</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>  
+        
+        <section class="Image-Activity-Section">
+            <h1 id="Activity-Title">Test Your Knowledge</h1>
+        </section>
+    </div>
+    
+    <div class="Activity-Container">
+        <h1 id="Quiz-Header-Title">Quiz</h1>
+        <hr id="Activity-hr">
+        <p id="Activity-Paragraph">Here is a list of topics under JavaScript, Java Servlets and Php. This was designed to test your skill for the following topics.</p>
+        
+        <div class="Activity-Button-Container">
+            <div class="Left-Div-Button" >
+               <button onclick="window.location.href='JavaScriptQuiz.php'" class="JS-Button" id="Button-1Q">     
+                   <img src="images/JS.png" id="Image-1Q">
+               </button>
+            </div>
+            
+            <div class="Beside-Text">
+               <span>Java Script</span>
+               <p class="Paragraph-Text">JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive</p>
+            </div>
+
+            <div class="Center-Div-Button">
+                <button onclick="window.location.href='Quiz1.php'" class="JS-Button" id="Button-2Q">    
+                    <img src="images/JavaS.png" id="Image-2Q">
+                </button>
+            </div>
+            
+            <div class="Beside-Text">
+                <span>Java Servlet</span>
+                <p class="Paragraph-Text">A Java servlet is a Java program that extends the capabilities of a server.</p>
+            </div>
+            
+            <div class="Right-Div-Button">
+                <h4 id="Button1-Title"> 
+                    <button onclick="window.location.href='Quiz1.php'" class="JS-Button" id="Button-3Q">    
+                        <img src="images/PHP.png" id="Image-3Q">
+                    </button>
+                </h4>
+            </div>
+            
+            <div class="Beside-Text">
+                <span>Php</span>
+                <p class="Paragraph-Text">PHP is a server side scripting language suited for web based technologies and it can be embedded into HTML.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
