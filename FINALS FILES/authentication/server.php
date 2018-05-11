@@ -10,15 +10,6 @@
 		$username = mysqli_real_escape_string($conn, $_POST['username']);
 		$password1 = mysqli_real_escape_string($conn, $_POST['password']);
 		$password2 = mysqli_real_escape_string($conn, $_POST['password2']);
-		if (empty($username)) {
-          //  array_push($errors, "Username is required");
-        }else 
-        if (empty($password)) {
-         //   array_push($errors, "Password is required");
-        } else         
-        if ($password != password2) {
-         //   array_push($errors, "The two passwords do not match");
-        }
 		
 		$sql = "SELECT username from users where username = '$username' ";
 		$result = mysqli_query($conn,$sql);
@@ -29,7 +20,10 @@
 				$sql = "INSERT INTO users (username, password, password2)
 							VALUES ('$username', '$password', '$password')";
 				mysqli_query($conn,$sql);
-				print "Success";
+				header("Location: login.php");
+				exit;
+			} else if($password1!=$password2) {
+				//Do something if password1 and password2 mismatched.
 			}
 		}
 	}
