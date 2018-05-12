@@ -41,7 +41,7 @@ nav.black {
     padding: 10px 100px;
 }
 
-nav .logo {
+nav .Logo-Title {
     padding: 22px 20px;
     margin-top: -.5%;
     float: left;
@@ -51,7 +51,7 @@ nav .logo {
     color: white;
 }
 
-nav.black .logo {
+nav.black .Logo-Title {
     color: #fff;
 }
 
@@ -83,6 +83,13 @@ nav.black ul li a {
     color: #fff;
 }
 
+.Notes-Image-Section {
+    widows: 100%;
+    height: 100vh;
+    background: url(images/notes.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
 #Activity-Title {
     position: absolute;
@@ -91,27 +98,14 @@ nav.black ul li a {
     transform: translate(-50%, -50%);
     font-size: 7vh;
     font-family: "Messages";
-    color: white;
+    color: black;
 }
 
-
-
-section.Image-Notes-Section {
-    widows: 100%;
-    height: 100vh;
-    background: url(images/notes.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-
-
-.Activity-Container {
-    background-color: #F8F1EC;
+.Activity-Choice {
+    background-color: #00C5CD;
     height: auto;
     width: 100%;
     text-align: center;
-    float: left;
 }
 
 .center-on-page {
@@ -120,7 +114,6 @@ section.Image-Notes-Section {
 }
 
 #opts {
-    margin-left: 36%;
     margin-top: 3%;
     padding: 1%;
     font-size: 3vh;
@@ -155,13 +148,90 @@ h3 {
     
 }
 
+h4 {
+    font-size: 2vh;
+    font-family: "Antipasto";
+    padding-bottom: 1%;
+}
+
 p {
     font-family: Calibri Light;
     font-size: 3vh;
     padding-bottom: 1%;
+    text-indent: 2.5%;
 }
 
 #btn {
     padding: 1%;
     font-size: 2vh;
+    float: right;
+    margin-right: 10%;
 }
+
+#Topic1-Title{
+    text-align: center;
+    padding-top: 4%;
+}
+
+.Topic-Space {
+    width: 60%;
+    position: relative;
+    float: left;
+}
+
+.Topic-Space2 {
+    width: 60%;
+    position: relative;
+    float: left;
+    background-color: #F2F2F2;
+    margin-top: 3%;
+}
+
+.Topic-Space-3 {
+    width: 90%;
+    padding-left: 2%;
+}
+
+#Topic-Sub-Title {
+    text-align: center;
+}
+
+.Java-Servlet-Space-Container {
+    padding: 2%; 
+}
+
+.Cycle-Photo {
+    width: 30%;
+    position: relative;
+    float: left;
+    height: 50%;
+    margin-top: 9%;
+}
+
+.Servlet-Photo {
+    width: 40%;
+    position: relative;
+    float: left;
+}
+
+
+
+
+
+
+.Topic-Space-5 {
+    width: 50%;
+    position: relative;
+    float: left;
+    margin-top: 1%;
+}
+.User-Authentication-Photo {
+    width: 40%;
+    position: relative;
+    float: left;
+}
+
+
+
+
+
