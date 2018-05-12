@@ -1,0 +1,100 @@
+<h2>Open Web Application Security Project (OWASP)</h2>
+
+<p>The Open Web Application Security Project (OWASP) is a 501(c)(3) worldwide not-for-profit charitable organization focused on improving the security of software. Our mission is to make software security visible, so that individuals and organizations are able to make informed decisions. OWASP is in a unique position to provide impartial, practical information about AppSec to individuals, corporations, universities, government agencies and other organizations worldwide. Operating as a community of like-minded professionals, OWASP issues software tools and knowledge-based documentation on application security.</p>
+
+<p>OWASP seeks to educate developers, designers, architects and business owners about the risks associated with the most common Web application security vulnerabilities. OWASP, which supports both open source and commercial security products, has become known as a forum in which information technology professionals can network and build expertise. The organization publishes a popular Top Ten list that explains the most dangerous Web application security flaws and provides recommendations for dealing with those flaws.</p>
+
+<p>OWASP tools, document and code library projects are organized into three categories, tools and documents that can be used to find security-related design and implementation flaws, tools and documents that can be used to guard against security-related design and implementation flaws and tools and documents that can be used to add security-related activities into the application  lifecycle management (ALM). </p>
+
+<h2>The OWASP Foundation</h2>
+<p>The OWASP Foundation came online on December 1st 2001 it was established as a not-for-profit charitable organization in the United States on April 21, 2004 to ensure the ongoing availability and support for our work at OWASP. OWASP is an international organization and the OWASP Foundation supports OWASP efforts around the world. OWASP is an open community dedicated to enabling organizations to conceive, develop, acquire, operate, and maintain applications that can be trusted. All of the OWASP tools, documents, forums, and chapters are free and open to anyone interested in improving application security. We advocate approaching application security as a people, process, and technology problem because the most effective approaches to application security include improvements in all of these areas. We can be found at www.owasp.org.</p>
+
+
+<p>OWASP is a new kind of organization. Our freedom from commercial pressures allows us to provide unbiased, practical, cost-effective information about application security. OWASP is not affiliated with any technology company, although we support the informed use of commercial security technology. Similar to many open-source software projects, OWASP produces many types of materials in a collaborative and open way. The OWASP Foundation is a not-for-profit entity that ensures the project's long-term success.</p>
+
+<h2>Core Values</h2>
+<p>OPEN Everything at OWASP is radically transparent from our finances to our code.</p>
+
+<p>INNOVATION OWASP encourages and supports innovation and experiments for solutions to software security challenges.</p>
+
+<p>GLOBAL Anyone around the world is encouraged to participate in the OWASP community.</p>
+
+<p>INTEGRITY OWASP is an honest and truthful, vendor neutral, global community.</p>
+
+
+<h2>Core Purpose</h2>
+<p>Be the thriving global community that drives visibility and evolution in the safety and security of the world’s software.</p>
+
+
+<h2>Code of Ethics</h2>
+<p>Each of us is expected to behave according to the principles contained in the following Code of Ethics. Breaches of the Code of Ethics may result in the foundation taking disciplinary action.</p>
+
+<p>Perform all professional activities and duties in accordance with all applicable laws and the highest ethical principles;</p>
+<p>Promote the implementation of and promote compliance with standards, procedures, controls for application security;</p>
+<p>Maintain appropriate confidentiality of proprietary or otherwise sensitive information encountered in the course of professional activities;</p>
+<p>Discharge professional responsibilities with diligence and honesty;</p>
+<p>To communicate openly and honestly;</p>
+<p>Refrain from any activities which might constitute a conflict of interest or otherwise damage the reputation of employers, the information security profession, or the Association;</p>
+<p>To maintain and affirm our objectivity and independence;</p>
+<p>To reject inappropriate pressure from industry or others;</p>
+<p>Not intentionally injure or impugn the professional reputation of practice of colleagues, clients, or employers;
+<p>Treat everyone with respect and dignity; and</p>
+<p>To avoid relationships that impair — or may appear to impair — OWASP's objectivity and independence.</p>
+
+<h2>Principles</h2>
+<p>Free & Open</p>
+<p>Governed by rough consensus & running code</p>
+<p>Abide by a code of ethics (see ethics)</p>
+<p>Not-for-profit</p>
+<p>Not driven by commercial interests</p>
+<p>Risk based approach</p>
+
+<h2>Top 10 Application Security Risks as of 2017</h2>
+
+<h3>Injection</h3>
+
+<p>Injection flaws, such as SQL, NoSQL, OS, and LDAP injection, occur when untrusted data is sent to an interpreter as part of a command or query. The attacker's hostile data can trick the interpreter into executing unintended commands or accessing data without proper authorization.</p>
+
+
+<h3>Broken Authentication</h3>
+
+<p>Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users' identities temporarily or permanently.</p>
+
+	
+<h3>Sensitive Data Exposure</h3>
+
+<p>Many web applications and APIs do not properly protect sensitive data, such as financial, healthcare, and PII. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data may be compromised without extra protection, such as encryption at rest or in transit, and requires special precautions when exchanged with the browser.</p>
+
+<h3>XML External Entities (XXE)</h3>
+
+<p>Many older or poorly configured XML processors evaluate external entity references within XML documents. External entities can be used to disclose internal files using the file URI handler, internal file shares, internal port scanning, remote code execution, and denial of service attacks.</p>
+
+<h3>Broken Access Control</h3>
+
+<p>Restrictions on what authenticated users are allowed to do are often not properly enforced. Attackers can exploit these flaws to access unauthorized functionality and/or data, such as access other users' accounts, view sensitive files, modify other users' data, change access rights, etc.</p>
+
+<h3>Security Misconfiguration</h3>
+
+<p>Security misconfiguration is the most commonly seen issue. This is commonly a result of insecure default configurations, incomplete or ad hoc configurations, open cloud storage, misconfigured HTTP headers, and verbose error messages containing sensitive information. Not only must all operating systems, frameworks, libraries, and applications be securely configured, but they must be patched/upgraded in a timely fashion.</p>
+
+<h3>Cross-Site Scripting (XSS)</h3>
+
+<p>XSS flaws occur whenever an application includes untrusted data in a new web page without proper validation or escaping, or updates an existing web page with user-supplied data using a browser API that can create HTML or JavaScript. XSS allows attackers to execute scripts in the victim's browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites.</p>
+	
+<h3>Insecure Deserialization</h3>
+
+<p>Insecure deserialization often leads to remote code execution. Even if deserialization flaws do not result in remote code execution, they can be used to perform attacks, including replay attacks, injection attacks, and privilege escalation attacks.</p>
+
+<h3>Using Components with Known Vulnerabilities</h3>
+
+<p>Components, such as libraries, frameworks, and other software modules, run with the same privileges as the application. If a vulnerable component is exploited, such an attack can facilitate serious data loss or server takeover. Applications and APIs using components with known vulnerabilities may undermine application defenses and enable various attacks and impacts.</p>
+
+<h3>Insufficient Logging & Monitoring</h3>
+
+<p>Insufficient logging and monitoring, coupled with missing or ineffective integration with incident response, allows attackers to further attack systems, maintain persistence, pivot to more systems, and tamper, extract, or destroy data. Most breach studies show time to detect a breach is over 200 days, typically detected by external parties rather than internal processes or monitoring.</p>
+
+<h2>References</h2>
+<p>https://www.owasp.org/index.php/About_The_Open_Web_Application_Security_Project</p>
+<p>https://www.owasp.org/index.php/Main_Page</p>
+<p>https://searchsoftwarequality.techtarget.com/definition/OWASP</p>
+<p>https://www.owasp.org/index.php/Top_10-2017_Top_10</p>
