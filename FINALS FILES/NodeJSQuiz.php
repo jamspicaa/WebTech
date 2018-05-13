@@ -13,11 +13,11 @@
     <div class="Quiz-Container">
         <h1 style="text-align: center;">Test your NodeJS skill</h1>
         
-        <form action="JavaScriptScore.php" method="post" id="quiz">
+        <form action="NodeJsScore.php" method="post" id="quiz">
             <h2>Welcome to NodeJS! Good luck!</h2><br><br>
             <ol>
                 <li>
-                    <h3>What is a JavaScript run-time environment.</h3>b
+                    <h3>What is a JavaScript run-time environment.</h3>
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" required />
                         <label for="question-1-answers-A">A) Note.js</label>
@@ -36,7 +36,7 @@
                     </div>
                 </li><br>
                 <li>
-                    <h3>It can be anything that ranges from reading/writing local files to making an HTTP request to an API.</h3>a
+                    <h3>It can be anything that ranges from reading/writing local files to making an HTTP request to an API.</h3>
                     <div>
                         <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" required />
                         <label for="question-2-answers-A">A) Input/Output (I/O)</label>
@@ -55,7 +55,7 @@
                     </div>
                 </li><br>
                 <li>
-                    <h3>In this method, the request of a user b’s data is not initiated until user a’s data is being displayed to the screen.</h3>a
+                    <h3>In this method, the request of a user b’s data is not initiated until user a’s data is being displayed to the screen.</h3>
                     <div>
                         <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" required />
                         <label for="question-3-answers-A">A) Blocking I/O</label>
@@ -76,7 +76,7 @@
                 <li>
                     <h3>A user can initiate a data request for user b without waiting for the response the request for user a. 
                         A user can initiate both requests in parallel.This non-blocking, 
-                        I/O removes the need for multi-threading, since the server can handle multiple requests at the same time.</h3>b
+                        I/O removes the need for multi-threading, since the server can handle multiple requests at the same time.</h3>
                     <div>
                         <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" required />
                         <label for="question-4-answers-A">A) Blocking I/O</label>
@@ -95,7 +95,7 @@
                     </div>
                 </li><br>
                 <li>
-                    <h3>These are the ways of File request using PHP or ASP except?</h3>b
+                    <h3>These are the ways of File request using PHP or ASP except?</h3>
                     <div>
                         <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" required />
                         <label for="question-5-answers-A">A) Sends the task to the computer's file system.</label>
@@ -114,7 +114,7 @@
                     </div>
                 </li><br>
                 <li>
-                    <h3>These are the ways of File request using Node.js</h3>d
+                    <h3>These are the ways of File request using Node.js</h3>
                     <div>
                         <input type="radio" name="question-6-answers" id="question-6-answers-A" value="A" required />
                         <label for="question-6-answers-A">A) Sends the task to the computer's file system.</label>
@@ -134,7 +134,7 @@
                     </div>
                 </li><br>
                 <li>
-                    <h3>Node.js can do this task except?</h3>a
+                    <h3>Node.js can do this task except?</h3>
                     <div>
                         <input type="radio" name="question-7-answers" id="question-7-answers-A" value="A" required />
                         <label for="question-7-answers-A">A) Dosen't collect form data</label>
@@ -153,7 +153,7 @@
                     </div>
                 </li><br>
                 <li>
-                    <h3>Contains a set of built-in modules which a user can use without installing it.</h3>a
+                    <h3>Contains a set of built-in modules which a user can use without installing it.</h3>
                     <div>
                         <input type="radio" name="question-8-answers" id="question-8-answers-A" value="A" required />
                         <label for="question-8-answers-A">A) Built-in Modules</label>
@@ -172,7 +172,7 @@
                     </div>
                 </li><br>
                 <li>
-                    <h3>Uses require() function with the name of the module: var http = require('http');</h3>b
+                    <h3>Uses require() function with the name of the module: var http = require('http');</h3>
                     <div>
                         <input type="radio" name="question-9-answers" id="question-9-answers-A" value="A" required />
                         <label for="question-9-answers-A">A) Built-in Modules</label>
@@ -191,7 +191,7 @@
                     </div>
                 </li><br>
                 <li>
-                    <h3>The HTTP module can make an HTTP server that listens to server ports and provides a response back to the client.</h3>d
+                    <h3>The HTTP module can make an HTTP server that listens to server ports and provides a response back to the client.</h3>
                     <div>
                         <input type="radio" name="question-10-answers" id="question-10-answers-A" value="A" required />
                         <label for="question-10-answers-A">A) Node.js as a Client</label>
